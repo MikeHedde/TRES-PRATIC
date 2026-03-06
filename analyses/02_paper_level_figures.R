@@ -1,8 +1,13 @@
 
 # Dataset
 paper_level_db <- read.csv("data/derived-data/paper_level_db.csv") 
+# A enlever plus tard quand la colonne sera clean
+paper_level_db <- paper_level_db %>%
+  mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))
 
+#############################################################
 # Figure showing the number of articles published per country
+#############################################################
 articles_per_country <- paper_level_db %>%
   count(Study_country) %>%
   rename(Country = Study_country)
@@ -10,6 +15,26 @@ articles_per_country <- paper_level_db %>%
 world <- ne_countries(scale = "medium", returnclass = "sf")
 map_data <- world %>%
   left_join(articles_per_country, by = c("name" = "Country"))
+
+# manque-t-il des pays dans le df joint?
+missing_countries <- setdiff(
+  articles_per_country$Country,
+  world$name
+)
+
+missing_countries
+
+# Comment est nommée Czech Republic dans la base Natural Earth
+world %>%
+  filter(grepl("Czech", name))
+
+# on change le nom dans articles_per_country
+articles_per_country <- articles_per_country %>%
+  mutate(
+    Country = ifelse(Country == "Czech Republic",
+                     "Czechia",
+                     Country)
+  )
 
 fig_chloropeth <- ggplot(map_data) +
   geom_sf(aes(fill = n), color = "grey40", size = 0.1) +
@@ -24,7 +49,9 @@ ggsave("Figures/01_paper_level/map_articles_country.png",
        plot = fig_chloropeth,
        width = 20, height = 8, dpi = 300)
 
+#############################################################
 # Figure showing the cummulated number of articles published per year
+#############################################################
 year_counts <- paper_level_db %>%
   count(Publication_Year) %>%
   arrange(Publication_Year)%>%
