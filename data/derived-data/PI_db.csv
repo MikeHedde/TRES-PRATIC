@@ -11,11 +11,11 @@
 "10","s_7","GMO","Spiders",NA
 "11","s_7","GMO","Spiders","Morphological"
 "12","s_7","GMO","Invertebrates","Behavioral, Morphological"
-"13","s_8","Organic agriculture ","Collembola","Morphological, Physiological, Behavioral "
+"13","s_8","Organic agriculture","Collembola","Morphological, Physiological, Behavioral "
 "14","s_8","Combined practices","Collembola","Morphological, Physiological, Behavioral "
-"15","s_8","Organic agriculture ","Collembola","Morphological"
+"15","s_8","Organic agriculture","Collembola","Morphological"
 "16","s_8","Combined practices","Collembola","Morphological"
-"17","s_8","Organic agriculture ","Collembola","Physiological"
+"17","s_8","Organic agriculture","Collembola","Physiological"
 "18","s_8","Combined practices","Collembola","Physiological"
 "19","s_24","Organic agriculture","Spiders","Morphological"
 "20","s_24","Organic agriculture","Spiders","Behavioral"
@@ -96,19 +96,19 @@
 "95","s_52","Landscape complexity","Other insects","Morphological"
 "96","s_58","Combined practices","Beetles","Morphological"
 "97","s_58","Combined practices","Beetles","Behavioral"
-"98","s_61","Agroforestry ","Other insects",NA
-"99","s_61","Agroforestry ","Collembola",NA
-"100","s_61","Agroforestry ","Woodlice",NA
-"101","s_61","Agroforestry ","Acari",NA
-"102","s_61","Agroforestry ","Spiders",NA
-"103","s_61","Agroforestry ","Other arachnids",NA
-"104","s_61","Agroforestry ","Beetles",NA
-"105","s_61","Agroforestry ","Millipedes",NA
-"106","s_61","Agroforestry ","Ants",NA
-"107","s_61","Agroforestry ","Mollusks",NA
-"108","s_61","Agroforestry ","Beetles","Morphological"
-"109","s_61","Agroforestry ","Beetles","Behavioral"
-"110","s_61","Agroforestry ","Beetles","Physiological"
+"98","s_61","Agroforestry","Other insects",NA
+"99","s_61","Agroforestry","Collembola",NA
+"100","s_61","Agroforestry","Woodlice",NA
+"101","s_61","Agroforestry","Acari",NA
+"102","s_61","Agroforestry","Spiders",NA
+"103","s_61","Agroforestry","Other arachnids",NA
+"104","s_61","Agroforestry","Beetles",NA
+"105","s_61","Agroforestry","Millipedes",NA
+"106","s_61","Agroforestry","Ants",NA
+"107","s_61","Agroforestry","Mollusks",NA
+"108","s_61","Agroforestry","Beetles","Morphological"
+"109","s_61","Agroforestry","Beetles","Behavioral"
+"110","s_61","Agroforestry","Beetles","Physiological"
 "111","s_72","Organic agriculture","Beetles","Behavioral"
 "112","s_72","Organic agriculture","Beetles","Morphological"
 "113","s_85","Organic agriculture","Beetles",NA
