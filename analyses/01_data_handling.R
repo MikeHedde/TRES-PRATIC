@@ -1,5 +1,5 @@
 # Dataset
-db <- read.csv("data/raw-data/raw_db.csv", h= T, sep = ";")
+db <- read.csv("data/raw-data/raw_db.csv", h = T, sep = ",")
 
 #Sous jeu de données synthétique au niveau des articles
 paper_level_db <- db %>%
