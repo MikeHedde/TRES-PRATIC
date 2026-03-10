@@ -3,17 +3,17 @@
 PI_db <- read.csv("data/derived-data/PI_db.csv") 
 
     # A enlever plus tard quand les colonne seront clean
-    PI_db <- PI_db %>%
-      mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))%>%
-      mutate(
-        Population_homogenized = case_when(
-          Population_homogenized %in% c("Earthworms", "Earthworm") ~ "Earthworms",
-          Population_homogenized %in% c("Termite", "Termites") ~ "Termites",
-          Population_homogenized %in% c("Invertebrate", "Invertebrates", "Arthropods") ~ "Invertebrates",
-          Population_homogenized %in% c("Other insects", "Insects", "Arthropods") ~ "Other insects",
-          TRUE ~ Population_homogenized
-        )
-      )
+#    PI_db <- PI_db %>%
+#      mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))%>%
+#      mutate(
+#        Population_homogenized = case_when(
+#          Population_homogenized %in% c("Earthworms", "Earthworm") ~ "Earthworms",
+#          Population_homogenized %in% c("Termite", "Termites") ~ "Termites",
+#          Population_homogenized %in% c("Invertebrate", "Invertebrates", "Arthropods") ~ "Invertebrates",
+#          Population_homogenized %in% c("Other insects", "Insects", "Arthropods") ~ "Other insects",
+#          TRUE ~ Population_homogenized
+#        )
+#      )
 
 # Ordre logique pour la représentation
 order_taxa <- c(
@@ -45,15 +45,15 @@ PI_db <- PI_db %>%
 # 2. Agrégation
 #############################################################
 
-heatmap_data <- PI_db2 %>%
+heatmap_data <- PI_db %>% #j'ai enlevé le 2
   distinct(Study_ID, Intervention_R2, Population_homogenized) %>%
   count(Intervention_R2, Population_homogenized, name = "n")
 
-intervention_counts <- PI_db2 %>%
+intervention_counts <- PI_db %>% #j'ai enlevé le 2
   distinct(Study_ID, Intervention_R2) %>%
   count(Intervention_R2, name = "n")
 
-pop_counts <- PI_db2 %>%
+pop_counts <- PI_db %>% #j'ai enlevé le 2
   distinct(Study_ID, Population_homogenized) %>%
   count(Population_homogenized, name = "n")
 

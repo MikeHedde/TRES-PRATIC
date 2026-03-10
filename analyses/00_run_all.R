@@ -4,7 +4,7 @@
 
 # Libraries
 librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, scatterpie, 
-                 treemapify, cowplot) #librarian permet de télécharger les librairies et les mettre à jour etc
+                 treemapify, cowplot, patchwork) #librarian permet de télécharger les librairies et les mettre à jour etc
 
 # Run all scripts
 # Order matters !
