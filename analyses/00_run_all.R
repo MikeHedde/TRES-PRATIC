@@ -4,7 +4,7 @@
 
 # Libraries
 librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, scatterpie, 
-                 treemapify, cowplot)
+                 treemapify, cowplot, patchwork, scatterpie)
 
 # Run all scripts
 # Order matters !
