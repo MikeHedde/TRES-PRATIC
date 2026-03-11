@@ -1,9 +1,9 @@
 
 # Dataset
 paper_level_db <- read.csv("data/derived-data/paper_level_db.csv") 
-# A enlever plus tard quand la colonne sera clean
-paper_level_db <- paper_level_db %>%
-  mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))
+# A enlever plus tard quand la colonne sera clean -> la colonne est clean mais plutôt faire en focntion des articles que des études je pense, plus répétable pour l'instant en tout cas
+#paper_level_db <- paper_level_db %>%
+  #mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))
 
 #############################################################
 # Figure showing the number of articles published per country
@@ -25,16 +25,16 @@ missing_countries <- setdiff(
 missing_countries
 
 # Comment est nommée Czech Republic dans la base Natural Earth
-world %>%
-  filter(grepl("Czech", name))
+#world %>%
+#  filter(grepl("Czech", name))
 
-# on change le nom dans articles_per_country
-articles_per_country <- articles_per_country %>%
-  mutate(
-    Country = ifelse(Country == "Czech Republic",
-                     "Czechia",
-                     Country)
-  )
+# on change le nom dans articles_per_country -> fait sur la bdd
+#articles_per_country <- articles_per_country %>%
+# mutate(
+#    Country = ifelse(Country == "Czech Republic",
+#                     "Czechia",
+#                     Country)
+# )
 
 fig_chloropeth <- ggplot(map_data) +
   geom_sf(aes(fill = n), color = "grey40", size = 0.1) +
