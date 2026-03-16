@@ -1,21 +1,9 @@
-
 # Dataset
 PI_db <- read.csv("data/derived-data/PI_db.csv") 
+########################################################
+# 1. Ordre logique pour la représentation
+########################################################
 
-    # A enlever plus tard quand les colonne seront clean
-    PI_db <- PI_db %>%
-      mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))%>%
-      mutate(
-        Population_homogenized = case_when(
-          Population_homogenized %in% c("Earthworms", "Earthworm") ~ "Earthworms",
-          Population_homogenized %in% c("Termite", "Termites") ~ "Termites",
-          Population_homogenized %in% c("Invertebrate", "Invertebrates", "Arthropods") ~ "Invertebrates",
-          Population_homogenized %in% c("Other insects", "Insects", "Arthropods") ~ "Other insects",
-          TRUE ~ Population_homogenized
-        )
-      )
-
-# Ordre logique pour la représentation
 order_taxa <- c(
   "Invertebrates",
   "Macroinvertebrates",
@@ -38,40 +26,31 @@ order_taxa <- c(
 PI_db <- PI_db %>%
   mutate(
     Population_homogenized =
-      factor(Population_homogenized, levels = order_taxa)
+      factor(Population_homogenized, levels = rev(order_taxa))
   )
 
 #############################################################
 # 2. Agrégation
 #############################################################
 
-heatmap_data <- PI_db %>%
+heatmap_data <- PI_db %>% #Tableau avec une colonne pour le nombre d'occurrences de chaque couple intervention/population
   distinct(Study_ID, Intervention_R2, Population_homogenized) %>%
   count(Intervention_R2, Population_homogenized, name = "n")
 
-intervention_counts <- PI_db %>%
+heatmap_data <- heatmap_data %>%
+  na.omit() 
+
+intervention_counts <- PI_db %>% #>Tableau avec le nombre d'occurrences de chaque intervention
   distinct(Study_ID, Intervention_R2) %>%
   count(Intervention_R2, name = "n")
 
-pop_counts <- PI_db %>%
+pop_counts <- PI_db %>% #Tableau avec le nombre d'occurrences de chaque population
   distinct(Study_ID, Population_homogenized) %>%
   count(Population_homogenized, name = "n")
 
 #############################################################
 # 2bis. Préparation pour figures complémentaires
 #############################################################
-
-# Nettoyage éventuel de la colonne Trait_group
-PI_db <- PI_db %>%
-  mutate(
-    Trait_group = case_when(
-      Trait_group %in% c("Morphological", "Morphology") ~ "Morphological",
-      Trait_group %in% c("Physiological", "Physiology") ~ "Physiological",
-      Trait_group %in% c("Ecological preferences", "Ecological", "Ecology") ~ "Ecological preferences",
-      Trait_group %in% c("Behavioral", "Behavioural", "Behavior") ~ "Behavioral",
-      TRUE ~ Trait_group
-    )
-  )
 
 # Comptage du nombre d'études par intervention
 intervention_counts <- PI_db %>%
@@ -117,7 +96,7 @@ p_heat <- ggplot(
 ) +
   geom_tile(color = "white", linewidth = 0.45) +
   scale_fill_viridis_c(
-    name = "Number \nof papers",
+    name = "Number \nof studies",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(35, "mm"),
@@ -205,7 +184,7 @@ p_heat_leg <- p_heat +
     legend.box.margin = margin(0, 0, 0, 0)
   ) +
   scale_fill_viridis_c(
-    name = "Number \nof papers",
+    name = "Number \nof studies",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(28, "mm"),
