@@ -58,11 +58,17 @@ intervention_counts <- PI_db %>%
   count(Intervention_R2, name = "n") %>%
   arrange(n)
 
+intervention_counts <- intervention_counts %>%
+  na.omit()
+
 # Comptage du nombre d'études par groupe de faune
 pop_counts <- PI_db %>%
   distinct(Study_ID, Population_homogenized) %>%
   count(Population_homogenized, name = "n") %>%
   arrange(n)
+
+pop_counts <- pop_counts %>%
+  na.omit()
 
 # Données pour la figure "camemberts dans la matrice"
 trait_pie_data <- PI_db %>%
