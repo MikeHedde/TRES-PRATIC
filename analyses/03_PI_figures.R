@@ -70,16 +70,6 @@ pop_counts <- PI_db %>%
 pop_counts <- pop_counts %>%
   na.omit()
 
-# Données pour la figure "camemberts dans la matrice"
-trait_pie_data <- PI_db %>%
-  distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
-  count(Intervention_R2, Population_homogenized, Trait_group, name = "n")
-
-# Totaux par case (pour éventuellement contrôler la taille)
-trait_totals <- trait_pie_data %>%
-  group_by(Intervention_R2, Population_homogenized) %>%
-  summarise(total = sum(n), .groups = "drop")
-
 #############################################################
 # 3. Thème commun
 #############################################################
@@ -334,6 +324,17 @@ final_plot
   #############################################################
   # Ordres
   #############################################################
+
+  # Données pour la figure "camemberts dans la matrice"
+  trait_pie_data <- PI_db %>%
+    distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
+    count(Intervention_R2, Population_homogenized, Trait_group, name = "n")
+  
+  # Totaux par case (pour éventuellement contrôler la taille)
+  trait_totals <- trait_pie_data %>%
+    group_by(Intervention_R2, Population_homogenized) %>%
+    summarise(total = sum(n), .groups = "drop")
+  
   
   # ordre des interventions = ordre d'apparition dans les données
   intervention_order <- trait_pie_data %>%
