@@ -1,12 +1,10 @@
 
 # Dataset
 paper_level_db <- read.csv("data/derived-data/paper_level_db.csv") 
-# A enlever plus tard quand la colonne sera clean -> la colonne est clean mais plutôt faire en focntion des articles que des études je pense, plus répétable pour l'instant en tout cas
-#paper_level_db <- paper_level_db %>%
-  #mutate(Study_ID = str_extract(Study_ID, "s_[0-9]+"))
+
 
 #############################################################
-# Figure showing the number of articles published per country
+# Figure showing the number of studies published per country
 #############################################################
 articles_per_country <- paper_level_db %>%
   count(Study_country) %>%
@@ -52,7 +50,7 @@ ggsave("Figures/01_paper_level/map_articles_country.png",
 #############################################################
 # Figure showing the cummulated number of articles published per year
 #############################################################
-year_counts <- paper_level_db %>%
+year_counts <- paper_db %>%  #nrow = 40 : 41 articles moins le 127 pas encore traité exclu script 01
   count(Publication_Year) %>%
   arrange(Publication_Year)%>%
   mutate(cum_articles = cumsum(n))
@@ -88,7 +86,7 @@ ggplot(year_counts, aes(Publication_Year, cum_articles)) +
   theme_classic() +
   labs(
     x = "Publication year",
-    y = "Cumulative number of studies"
+    y = "Cumulative number of papers"
   ) +
   expand_limits(y = max(year_counts$cum_articles) + 8)
 
@@ -99,11 +97,11 @@ ggsave("Figures/01_paper_level/cumulative_articles.png",
        dpi = 300)
 
 # Treemap des journaux
-  ##nombre minimal d'article pour considérer la revue
+  ##nombre minimal d'articles pour considérer la revue
   threshold = 2
 
-journal_counts <- paper_level_db %>%
-  distinct(Study_ID, Newspaper) %>%
+journal_counts <- paper_db %>%
+  distinct(Article_ID, Newspaper) %>%
   count(Newspaper, sort = TRUE) %>%
   mutate(Newspaper = ifelse(n < threshold, "Other journals", Newspaper))%>%
   group_by(Newspaper) %>%

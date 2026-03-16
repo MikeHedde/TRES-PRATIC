@@ -1,287 +1,301 @@
 "","Study_ID","Intervention_R2","Population_homogenized","Trait_group"
-"1","s_5","Tillage management","Earthworm",NA
-"2","s_5","Tillage management","Earthworms",NA
-"3","s_5","Tillage management","Earthworms","Morphological, Behavioral, Physiological"
-"4","s_5","Tillage management","Earthworms","Morphological"
-"5","s_5","Tillage management","Earthworms","Physiological"
-"6","s_5","Tillage management","Earthworms","Behavioral"
-"7","s_7","GMO","Beetles",NA
-"8","s_7","GMO","Beetles","Morphological"
-"9","s_7","GMO","Collembola",NA
-"10","s_7","GMO","Collembola","Morphological"
-"11","s_7","GMO","Spiders",NA
-"12","s_7","GMO","Spiders","Morphological"
-"13","s_7","GMO","Invertebrate","Behavioral, Morphological"
-"14","s_8","Organic agriculture","Collembola","Morphological, Physiological, Behavioral"
-"15","s_8","Combined practices","Collembola","Morphological, Physiological, Behavioral"
-"16","s_8","Organic agriculture","Collembola","Morphological"
-"17","s_8","Combined practices","Collembola","Morphological"
-"18","s_8","Organic agriculture","Collembola","Physiological"
-"19","s_8","Combined practices","Collembola","Physiological"
-"20","s_24","Organic agriculture","Spiders","Morphological"
-"21","s_24","Organic agriculture","Spiders","Behavioral"
-"22","s_24","Organic agriculture","Spiders","Morphological, Behavioral"
-"23","s_24","Organic agriculture","Beetles","Morphological"
-"24","s_24","Organic agriculture","Beetles","Behavioral"
-"25","s_24","Organic agriculture","Beetles","Morphological, Behavioral"
-"26","s_25","Landscape complexity","Spiders","Morphological"
-"27","s_25","Landscape complexity","Spiders","Behavioral"
-"28","s_25","Landscape complexity","Beetles","Morphological"
-"29","s_25","Landscape complexity","Beetles","Behavioral"
-"30","s_25","Landscape complexity","Spiders",NA
-"31","s_25","Landscape complexity","Spiders","Morpological, Behavioral"
-"32","s_25","Landscape complexity","Beetles","Morpological, Behavioral"
-"33","s_25","Landscape complexity","Beetles",NA
-"34","s_27","Land-use change","Macroinvertebrates","Morphological"
-"35","s_32","Combined practices","Earthworms",NA
-"36","s_32","Crop diversification","Earthworms",NA
-"37","s_32","Fertilisers and amendments","Earthworms",NA
-"38","s_32","Crop diversification","Macroinvertebrates",NA
-"39","s_32","Fertilisers and amendments","Macroinvertebrates",NA
-"40","s_32","Crop diversification","Collembola",NA
-"41","s_32","Fertilisers and amendments","Collembola",NA
-"42","s_32","Combined practices","Macroinvertebrates",NA
-"43","s_32","Combined practices","Microinvertebrates",NA
-"44","s_36","Combined practices","Beetles","Morphological"
-"45","s_36","Combined practices","Beetles",NA
-"46","s_29","Land-use change","Acari",NA
-"47","s_29","Land-use change","Woodlice",NA
-"48","s_29","Land-use change","Millipedes",NA
-"49","s_29","Land-use change","Beetles",NA
-"50","s_29","Land-use change","Collembola","Morphological"
-"51","s_29","Land-use change","Other insects",NA
-"52","s_29","Land-use change","Microinvertebrates","Morphological"
-"53","s_29","Land-use change","Arthropods",NA
-"54","s_29","Land-use change","Arthropods","Morphological"
-"55","s_29","Land-use change","Earthworms",NA
-"56","s_29","Land-use change","Earthworms","Morphological"
-"57","s_40","Organic agriculture","Spiders","Morphological"
-"58","s_40","Crop diversification","Spiders","Morphological"
-"59","s_40","Organic agriculture","Spiders","Behavioral"
-"60","s_40","Crop diversification","Spiders","Behavioral"
-"61","s_40","Landscape complexity","Spiders","Behavioral"
-"62","s_40","Organic agriculture","Beetles","Morphological"
-"63","s_40","Crop diversification","Beetles","Morphological"
-"64","s_40","Organic agriculture","Beetles","Behavioral"
-"65","s_40","Crop diversification","Beetles","Behavioral"
-"66","s_40","Landscape complexity","Beetles","Behavioral"
-"67","s_40","Combined practices","Spiders","Morphological, Behavioral"
-"68","s_40","Combined practices","Beetles","Morphological, Behavioral"
-"69","s_44_SiltyClay","Tillage management","Microinvertebrates","Morphological"
-"70","s_44_SiltyClayLoam","Tillage management","Microinvertebrates","Morphological"
-"71","s_44_ClayLoam","Tillage management","Microinvertebrates","Morphological"
-"72","s_44_SiltLoam","Tillage management","Microinvertebrates","Morphological"
-"73","s_44_SandyLoam","Tillage management","Microinvertebrates","Morphological"
-"74","s_44_SiltyClay","Tillage management","Earthworms",NA
-"75","s_44_SiltyClayLoam","Tillage management","Earthworms",NA
-"76","s_44_ClayLoam","Tillage management","Earthworms",NA
-"77","s_44_SiltLoam","Tillage management","Earthworms",NA
-"78","s_44_SandyLoam","Tillage management","Earthworms",NA
-"79","s_44_SiltyClay","Tillage management","Earthworms","Morphological"
-"80","s_44_SiltyClayLoam","Tillage management","Earthworms","Morphological"
-"81","s_44_ClayLoam","Tillage management","Earthworms","Morphological"
-"82","s_44_SiltLoam","Tillage management","Earthworms","Morphological"
-"83","s_44_SandyLoam","Tillage management","Earthworms","Morphological"
-"84","s_46","Land-use change","Earthworms",NA
-"85","s_46","Land-use change","Earthworms","Morphological"
-"86","s_52","Landscape complexity","Spiders",NA
-"87","s_52","Landscape complexity","Beetles",NA
-"88","s_52","Landscape complexity","Other insects",NA
-"89","s_52","Landscape complexity","Spiders","Ecological preferences"
-"90","s_52","Landscape complexity","Beetles","Behavioral"
-"91","s_52","Landscape complexity","Other insects","Physiological"
-"92","s_52","Landscape complexity","Spiders","Morphological"
-"93","s_52","Landscape complexity","Beetles","Morphological"
-"94","s_52","Landscape complexity","Other insects","Morphological"
-"95","s_58","Combined practices","Beetles","Morphological"
-"96","s_58","Combined practices","Beetles","Behavioral"
-"97","s_61","Agroforestry","Other insects",NA
-"98","s_61","Agroforestry","Collembola",NA
-"99","s_61","Agroforestry","Woodlice",NA
-"100","s_61","Agroforestry","Acari",NA
-"101","s_61","Agroforestry","Spiders",NA
-"102","s_61","Agroforestry","Other arachnids",NA
-"103","s_61","Agroforestry","Beetles",NA
-"104","s_61","Agroforestry","Millipedes",NA
-"105","s_61","Agroforestry","Ants",NA
-"106","s_61","Agroforestry","Mollusks",NA
-"107","s_61","Agroforestry","Beetles","Morphological"
-"108","s_61","Agroforestry","Beetles","Behavioral"
-"109","s_61","Agroforestry","Beetles","Physiological"
-"110","s_72","Organic agriculture","Beetles","Behavioral"
-"111","s_72","Organic agriculture","Beetles","Morphological"
-"112","s_85","Organic agriculture","Beetles",NA
-"113","s_85","Organic agriculture","Beetles","Morphological, Behavioral"
-"114","s_85","Organic agriculture","Spiders",NA
-"115","s_85","Organic agriculture","Spiders","Morphological, Ecological preferences, Behavioral"
-"116","s_77","Organic agriculture","Beetles",NA
-"117","s_77","Organic agriculture","Spiders",NA
-"118","s_77","Organic agriculture","Beetles","Morphological"
-"119","s_77","Organic agriculture","Spiders","Morphological"
-"120","s_77","Landscape complexity","Spiders","Morphological"
-"121","s_87","Fertilisers and amendments","Earthworm",NA
-"122","s_87","Fertilisers and amendments","Earthworm","Morphological"
-"123","s_87","Fertilisers and amendments","Termite",NA
-"124","s_87","Fertilisers and amendments","Termite","Morphological"
-"125","s_2","Water management","Macroinvertebrates",NA
-"126","s_2","Water management","Macroinvertebrates","Ecological preferences"
-"127","s_2","Water management","Macroinvertebrates","Behavioral"
-"128","s_2","Water management","Macroinvertebrates","Morphological"
-"129","s_3","Agroforestry","Macroinvertebrates",NA
-"130","s_3","Agroforestry","Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
-"131","s_3",NA,"Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
-"132","s_3","Land-use change","Macroinvertebrates",NA
-"133","s_3","Land-use change","Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
-"134","s_4_site_1","Tillage management","Earthworms",NA
-"135","s_4_site_1","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preferences, Ecological preferences, Ecological preferences, Behavioral"
-"136","s_4_site_2","Tillage management","Earthworms",NA
-"137","s_4_site_2","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preferences, Ecological preferences, Ecological preferences, Behavioral"
-"138","s_4_site_3","Tillage management","Earthworms",NA
-"139","s_4_site_3","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preferences, Ecological preferences, Ecological preferences, Behavioral"
-"140","s_126","Land-use change","Beetles","Morphological"
-"141","s_126","Land-use change","Beetles","Behavioral"
-"142","s_126","Land-use change","Beetles","Phenological"
-"143","s_126","Land-use change","Beetles",NA
-"144","s_126","Land-use change","Beetles","Morphological, Morpgological, Behavioral, Phenological"
-"145","s_99","Agroforestry","Termites","Ecological preferences"
-"146","s_99","Land-use change","Termites","Ecological preferences"
-"147","s_99","Agroforestry","Ants","Ecological preferences"
-"148","s_99","Land-use change","Ants","Ecological preferences"
-"149","s_99","Agroforestry","Earthworms","Ecological preferences"
-"150","s_99","Land-use change","Earthworms","Ecological preferences"
-"151","s_99","Agroforestry","Beetles","Ecological preferences"
-"152","s_99","Land-use change","Beetles","Ecological preferences"
-"153","s_99","Agroforestry","Millipedes","Ecological preferences"
-"154","s_99","Land-use change","Millipedes","Ecological preferences"
-"155","s_99","Agroforestry","Macroinvertebrates","Ecological preferences"
-"156","s_99","Land-use change","Macroinvertebrates","Ecological preferences"
-"157","s_99",NA,"Macroinvertebrates","Ecological preferences"
-"158","s_99","Agroforestry","Macroinvertebrates",NA
-"159","s_99","Land-use change","Macroinvertebrates",NA
-"160","s_99","Agroforestry","Ants",NA
-"161","s_99","Land-use change","Ants",NA
-"162","s_99","Agroforestry","Termites",NA
-"163","s_99","Land-use change","Termites",NA
-"164","s_99","Agroforestry","Earthworm",NA
-"165","s_99","Land-use change","Earthworm",NA
-"166","s_99","Agroforestry","Beetles",NA
-"167","s_99","Land-use change","Beetles",NA
-"168","s_99","Agroforestry","Millipedes",NA
-"169","s_99","Land-use change","Millipedes",NA
-"170","s_99","Agroforestry","Spiders",NA
-"171","s_99","Land-use change","Spiders",NA
-"172","s_122","Land-use change","Collembola",NA
-"173","s_122","Land-use change","Collembola","Ecological preferences, Morphological, Morphological, Morphological, Morphological, Morphological, Physiological"
-"174","s_122","Land-use change","Collembola","Ecological preferences"
-"175","s_122","Land-use change","Collembola","Morphological"
-"176","s_122","Land-use change","Collembola","Physiological"
-"177","s_125","Conservation agriculture","Macroinvertebrates",NA
-"178","s_125","Conservation agriculture","Macroinvertebrates","Morphological"
-"179","s_127","","Ants",NA
-"180","s_127","","Earthworm",NA
-"181","s_127","","Other insects",NA
-"182","s_127","","Beetles",NA
-"183","s_127","","Spiders",NA
-"184","s_127","","Millipedes",NA
-"185","s_127","","Macroinvertebrates",NA
-"186","s_127","","Macroinvertebrates","Morphological"
-"187","s_130","Tillage management","Earthworms",NA
-"188","s_130","Tillage management","Earthworms","Morphological"
-"189","s_130",NA,"Earthworms",NA
-"190","s_131","Combined practices","Insects",NA
-"191","s_131","Combined practices","Beetles",NA
-"192","s_131","Combined practices","Spiders",NA
-"193","s_131","Combined practices","Spiders","Morphological"
-"194","s_131","Combined practices","Beetles","Morphological"
-"195","s_131","Combined practices","Spiders","Ecological preferences"
-"196","s_131","Combined practices","Other insects",NA
-"197","s_131","Combined practices","Spiders","Behavioral"
-"198","s_132_site_1","Crop diversification","Earthworms","Morphological"
-"199","s_132_site_2","Crop diversification","Earthworms","Morphological"
-"200","s_132_site_3","Crop diversification","Earthworms","Morphological"
-"201","s_132_site_4","Crop diversification","Earthworms","Morphological"
-"202","s_141","Crop diversification","Termites",NA
-"203","s_141","Crop diversification","Termites","Morphological"
-"204","s_141","Crop diversification","Earthworms",NA
-"205","s_141","Crop diversification","Earthworms","Morphological"
-"206","s_141","Fertilisers and amendments","Termites",NA
-"207","s_141","Fertilisers and amendments","Termites","Morphological"
-"208","s_141","Fertilisers and amendments","Earthworms",NA
-"209","s_141","Fertilisers and amendments","Earthworms","Morphological"
-"210","s_141","Tillage management","Termites",NA
-"211","s_141","Tillage management","Termites","Morphological"
-"212","s_141","Tillage management","Earthworms",NA
-"213","s_141","Tillage management","Earthworms","Morphological"
-"214","s_142","Agroforestry","Termites",NA
-"215","s_142","Agroforestry","Mollusks",NA
-"216","s_142","Agroforestry","Earthworms",NA
-"217","s_142","Agroforestry","Woodlice",NA
-"218","s_142","Agroforestry","Spiders",NA
-"219","s_142","Agroforestry","Millipedes",NA
-"220","s_142","Agroforestry","Other insects",NA
-"221","s_142","Agroforestry","Beetles",NA
-"222","s_142","Agroforestry","Macroinvertebrates",NA
-"223","s_142","Agroforestry","Mollusks","Morphological"
-"224","s_142","Agroforestry","Earthworms","Morphological"
-"225","s_142","Agroforestry","Woodlice","Morphological"
-"226","s_142","Agroforestry","Spiders","Morphological"
-"227","s_142","Agroforestry","Millipedes","Morphological"
-"228","s_142","Agroforestry","Other insects","Morphological"
-"229","s_142","Agroforestry","Beetles","Morphological"
-"230","s_142","Agroforestry","Termites","Morphological"
-"231","s_142","Agroforestry","Macroinvertebrates","Morphological"
-"232","s_142","Agroforestry","Macroinvertebrates","Ecological preferences"
-"233","s_147","Landscape complexity","Earthworms","Morphological"
-"234","s_147","Landscape complexity","Earthworms",NA
-"235","s_147","Tillage management","Collembola",NA
-"236","s_147","Tillage management","Acari",NA
-"237","s_147","Tillage management","Other insects",NA
-"238","s_147","Organic agriculture","Spiders",NA
-"239","s_147","Combined practices","Spiders",NA
-"240","s_147","Organic agriculture","Beetles",NA
-"241","s_147","Combined practices","Beetles",NA
-"242","s_147","Organic agriculture","Ants",NA
-"243","s_147","Combined practices","Ants",NA
-"244","s_147","Organic agriculture","Other insects",NA
-"245","s_147","Combined practices","Other insects",NA
-"246","s_147","Organic agriculture","Millipedes",NA
-"247","s_147","Combined practices","Millipedes",NA
-"248","s_147","Organic agriculture","Woodlice",NA
-"249","s_147","Combined practices","Woodlice",NA
-"250","s_147","Organic agriculture","Other arachnids",NA
-"251","s_147","Combined practices","Other arachnids",NA
-"252","s_155","Pest and disease management","Spiders",NA
-"253","s_155","Pest and disease management","Spiders","Behavioral"
-"254","s_155","Pest and disease management","Spiders","Phenological"
-"255","s_155","Pest and disease management","Spiders","Morphological"
-"256","s_163","Crop diversification","Earthworms",NA
-"257","s_163","Crop diversification","Earthworms","Morphological"
-"258","s_184","Landscape complexity","Acari","Morphological"
-"259","s_184","Landscape complexity","Collembola","Morphological"
-"260","s_204","Residues management","Earthworms","Morphological"
-"261","s_204","Crop diversification","Earthworms","Morphological"
-"262","s_172_JUNE_2004","Landscape complexity","Invertebrates","Morphological"
-"263","s_172_JUNE_2005","Landscape complexity","Invertebrates","Morphological"
-"264","s_172_JULY_2004","Landscape complexity","Invertebrates","Morphological"
-"265","s_172_JULY_2005","Landscape complexity","Invertebrates","Morphological"
-"266","s_172_JUNE_2004","Landscape complexity","Other insects",NA
-"267","s_172_JUNE_2005","Landscape complexity","Other insects",NA
-"268","s_172_JULY_2004","Landscape complexity","Other insects",NA
-"269","s_172_JULY_2005","Landscape complexity","Other insects",NA
-"270","s_172_JUNE_2004","Landscape complexity","Beetles",NA
-"271","s_172_JUNE_2005","Landscape complexity","Beetles",NA
-"272","s_172_JULY_2004","Landscape complexity","Beetles",NA
-"273","s_172_JULY_2005","Landscape complexity","Beetles",NA
-"274","s_172_JUNE_2004","Landscape complexity","Ants",NA
-"275","s_172_JUNE_2005","Landscape complexity","Ants",NA
-"276","s_172_JULY_2004","Landscape complexity","Ants",NA
-"277","s_172_JULY_2005","Landscape complexity","Ants",NA
-"278","s_172_JUNE_2004","Landscape complexity","Spiders",NA
-"279","s_172_JUNE_2005","Landscape complexity","Spiders",NA
-"280","s_172_JULY_2004","Landscape complexity","Spiders",NA
-"281","s_172_JULY_2005","Landscape complexity","Spiders",NA
-"282","s_193","Organic agriculture","Tardigrada",NA
-"283","s_193","Organic agriculture","Acari",NA
-"284","s_193","Organic agriculture","Earthworms",NA
-"285","s_193","Organic agriculture","Earthworms","Morphological"
-"286","s_168","Agroforestry","Earthworms",NA
+"1","s_5","Tillage management","Earthworms",NA
+"2","s_5","Tillage management","Earthworms","Morphological, Behavioral, Physiological"
+"3","s_5","Tillage management","Earthworms","Morphological"
+"4","s_5","Tillage management","Earthworms","Physiological"
+"5","s_5","Tillage management","Earthworms","Behavioral"
+"6","s_7","GMO","Beetles",NA
+"7","s_7","GMO","Beetles","Morphological"
+"8","s_7","GMO","Collembola",NA
+"9","s_7","GMO","Collembola","Morphological"
+"10","s_7","GMO","Spiders",NA
+"11","s_7","GMO","Spiders","Morphological"
+"12","s_7","GMO","Invertebrates","Behavioral, Morphological"
+"13","s_8","Organic agriculture","Collembola","Morphological, Physiological, Behavioral"
+"14","s_8","Combined practices","Collembola","Morphological, Physiological, Behavioral"
+"15","s_8","Organic agriculture","Collembola","Morphological"
+"16","s_8","Combined practices","Collembola","Morphological"
+"17","s_8","Organic agriculture","Collembola","Physiological"
+"18","s_8","Combined practices","Collembola","Physiological"
+"19","s_24","Organic agriculture","Spiders","Morphological"
+"20","s_24","Organic agriculture","Spiders","Behavioral"
+"21","s_24","Organic agriculture","Spiders","Morphological, Behavioral"
+"22","s_24","Organic agriculture","Beetles","Morphological"
+"23","s_24","Organic agriculture","Beetles","Behavioral"
+"24","s_24","Organic agriculture","Beetles","Morphological, Behavioral"
+"25","s_25","Landscape complexity","Spiders","Morphological"
+"26","s_25","Landscape complexity","Spiders","Behavioral"
+"27","s_25","Landscape complexity","Beetles","Morphological"
+"28","s_25","Landscape complexity","Beetles","Behavioral"
+"29","s_25","Landscape complexity","Spiders",NA
+"30","s_25","Landscape complexity","Spiders","Morpological, Behavioral"
+"31","s_25","Landscape complexity","Beetles","Morpological, Behavioral"
+"32","s_25","Landscape complexity","Beetles",NA
+"33","s_27","Land-use change","Macroinvertebrates","Morphological"
+"34","s_32","Combined practices","Earthworms",NA
+"35","s_32","Crop diversification","Earthworms",NA
+"36","s_32","Fertilisers and amendments","Earthworms",NA
+"37","s_32","Crop diversification","Macroinvertebrates",NA
+"38","s_32","Fertilisers and amendments","Macroinvertebrates",NA
+"39","s_32","Crop diversification","Collembola",NA
+"40","s_32","Fertilisers and amendments","Collembola",NA
+"41","s_32","Combined practices","Macroinvertebrates",NA
+"42","s_32","Combined practices","Microinvertebrates",NA
+"43","s_36","Combined practices","Beetles","Morphological"
+"44","s_36","Combined practices","Beetles",NA
+"45","s_29","Land-use change","Acari",NA
+"46","s_29","Land-use change","Woodlice",NA
+"47","s_29","Land-use change","Millipedes",NA
+"48","s_29","Land-use change","Beetles",NA
+"49","s_29","Land-use change","Collembola","Morphological"
+"50","s_29","Land-use change","Other insects",NA
+"51","s_29","Land-use change","Microinvertebrates","Morphological"
+"52","s_29","Land-use change","Invertebrates",NA
+"53","s_29","Land-use change","Invertebrates","Morphological"
+"54","s_29","Land-use change","Earthworms",NA
+"55","s_29","Land-use change","Earthworms","Morphological"
+"56","s_40","Organic agriculture","Spiders","Morphological"
+"57","s_40","Crop diversification","Spiders","Morphological"
+"58","s_40","Organic agriculture","Spiders","Behavioral"
+"59","s_40","Crop diversification","Spiders","Behavioral"
+"60","s_40","Landscape complexity","Spiders","Behavioral"
+"61","s_40","Organic agriculture","Beetles","Morphological"
+"62","s_40","Crop diversification","Beetles","Morphological"
+"63","s_40","Organic agriculture","Beetles","Behavioral"
+"64","s_40","Crop diversification","Beetles","Behavioral"
+"65","s_40","Landscape complexity","Beetles","Behavioral"
+"66","s_40","Combined practices","Spiders","Morphological, Behavioral"
+"67","s_40","Combined practices","Beetles","Morphological, Behavioral"
+"68","s_44_Site 1","Tillage management","Microinvertebrates","Morphological"
+"69","s_44_Site 2","Tillage management","Microinvertebrates","Morphological"
+"70","s_44_Site 3","Tillage management","Microinvertebrates","Morphological"
+"71","s_44_Site 4","Tillage management","Microinvertebrates","Morphological"
+"72","s_44_Site 5","Tillage management","Microinvertebrates","Morphological"
+"73","s_44_Site 1","Tillage management","Earthworms",NA
+"74","s_44_Site 2","Tillage management","Earthworms",NA
+"75","s_44_Site 3","Tillage management","Earthworms",NA
+"76","s_44_Site 4","Tillage management","Earthworms",NA
+"77","s_44_Site 5","Tillage management","Earthworms",NA
+"78","s_44_Site 1","Tillage management","Earthworms","Morphological"
+"79","s_44_Site 2","Tillage management","Earthworms","Morphological"
+"80","s_44_Site 3","Tillage management","Earthworms","Morphological"
+"81","s_44_Site 4","Tillage management","Earthworms","Morphological"
+"82","s_44_Site 5","Tillage management","Earthworms","Morphological"
+"83","s_46","Land-use change","Earthworms",NA
+"84","s_46","Land-use change","Earthworms","Morphological"
+"85","s_52","Landscape complexity","Spiders",NA
+"86","s_52","Landscape complexity","Beetles",NA
+"87","s_52","Landscape complexity","Other insects",NA
+"88","s_52","Landscape complexity","Spiders","Ecological preference"
+"89","s_52","Landscape complexity","Beetles","Behavioral"
+"90","s_52","Landscape complexity","Other insects","Physiological"
+"91","s_52","Landscape complexity","Spiders","Morphological"
+"92","s_52","Landscape complexity","Beetles","Morphological"
+"93","s_52","Landscape complexity","Other insects","Morphological"
+"94","s_58","Combined practices","Beetles","Morphological"
+"95","s_58","Combined practices","Beetles","Behavioral"
+"96","s_61","Agroforestry","Other insects",NA
+"97","s_61","Agroforestry","Collembola",NA
+"98","s_61","Agroforestry","Woodlice",NA
+"99","s_61","Agroforestry","Acari",NA
+"100","s_61","Agroforestry","Spiders",NA
+"101","s_61","Agroforestry","Other arachnids",NA
+"102","s_61","Agroforestry","Beetles",NA
+"103","s_61","Agroforestry","Millipedes",NA
+"104","s_61","Agroforestry","Ants",NA
+"105","s_61","Agroforestry","Mollusks",NA
+"106","s_61","Agroforestry","Beetles","Morphological"
+"107","s_61","Agroforestry","Beetles","Behavioral"
+"108","s_61","Agroforestry","Beetles","Physiological"
+"109","s_72","Organic agriculture","Beetles","Behavioral"
+"110","s_72","Organic agriculture","Beetles","Morphological"
+"111","s_85","Organic agriculture","Beetles",NA
+"112","s_85","Organic agriculture","Beetles","Morphological, Behavioral"
+"113","s_85","Organic agriculture","Spiders",NA
+"114","s_85","Organic agriculture","Spiders","Morphological, Ecological preference, Behavioral"
+"115","s_77","Organic agriculture","Beetles",NA
+"116","s_77","Organic agriculture","Spiders",NA
+"117","s_77","Organic agriculture","Beetles","Morphological"
+"118","s_77","Organic agriculture","Spiders","Morphological"
+"119","s_77","Landscape complexity","Spiders","Morphological"
+"120","s_87","Fertilisers and amendments","Earthworms",NA
+"121","s_87","Fertilisers and amendments","Earthworms","Morphological"
+"122","s_87","Fertilisers and amendments","Termites",NA
+"123","s_87","Fertilisers and amendments","Termites","Morphological"
+"124","s_2","Water management","Macroinvertebrates",NA
+"125","s_2","Water management","Macroinvertebrates","Ecological preference"
+"126","s_2","Water management","Macroinvertebrates","Behavioral"
+"127","s_2","Water management","Macroinvertebrates","Morphological"
+"128","s_3","Agroforestry","Macroinvertebrates",NA
+"129","s_3","Agroforestry","Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
+"130","s_3",NA,"Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
+"131","s_3","Land-use change","Macroinvertebrates",NA
+"132","s_3","Land-use change","Macroinvertebrates","Morphological, Morphological, Behavioral, Behavioral"
+"133","s_4_site_1","Tillage management","Earthworms",NA
+"134","s_4_site_1","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preference, Ecological preference, Ecological preference, Behavioral"
+"135","s_4_site_2","Tillage management","Earthworms",NA
+"136","s_4_site_2","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preference, Ecological preference, Ecological preference, Behavioral"
+"137","s_4_site_3","Tillage management","Earthworms",NA
+"138","s_4_site_3","Tillage management","Earthworms","Morphological, Morphological, Morphological, Morphological, Morphological, Ecological preference, Ecological preference, Ecological preference, Behavioral"
+"139","s_126","Land-use change","Beetles","Morphological"
+"140","s_126","Land-use change","Beetles","Behavioral"
+"141","s_126","Land-use change","Beetles","Phenological"
+"142","s_126","Land-use change","Beetles",NA
+"143","s_126","Land-use change","Beetles","Morphological, Morpgological, Behavioral, Phenological"
+"144","s_99","Agroforestry","Termites","Ecological preference"
+"145","s_99","Land-use change","Termites","Ecological preference"
+"146","s_99","Agroforestry","Ants","Ecological preference"
+"147","s_99","Land-use change","Ants","Ecological preference"
+"148","s_99","Agroforestry","Earthworms","Ecological preference"
+"149","s_99","Land-use change","Earthworms","Ecological preference"
+"150","s_99","Agroforestry","Beetles","Ecological preference"
+"151","s_99","Land-use change","Beetles","Ecological preference"
+"152","s_99","Agroforestry","Millipedes","Ecological preference"
+"153","s_99","Land-use change","Millipedes","Ecological preference"
+"154","s_99","Agroforestry","Macroinvertebrates","Ecological preference"
+"155","s_99","Land-use change","Macroinvertebrates","Ecological preference"
+"156","s_99",NA,"Macroinvertebrates","Ecological preference"
+"157","s_99","Agroforestry","Macroinvertebrates",NA
+"158","s_99","Land-use change","Macroinvertebrates",NA
+"159","s_99","Agroforestry","Ants",NA
+"160","s_99","Land-use change","Ants",NA
+"161","s_99","Agroforestry","Termites",NA
+"162","s_99","Land-use change","Termites",NA
+"163","s_99","Agroforestry","Earthworms",NA
+"164","s_99","Land-use change","Earthworms",NA
+"165","s_99","Agroforestry","Beetles",NA
+"166","s_99","Land-use change","Beetles",NA
+"167","s_99","Agroforestry","Millipedes",NA
+"168","s_99","Land-use change","Millipedes",NA
+"169","s_99","Agroforestry","Spiders",NA
+"170","s_99","Land-use change","Spiders",NA
+"171","s_122","Land-use change","Collembola",NA
+"172","s_122","Land-use change","Collembola","Ecological preference, Morphological, Morphological, Morphological, Morphological, Morphological, Physiological"
+"173","s_122","Land-use change","Collembola","Ecological preference"
+"174","s_122","Land-use change","Collembola","Morphological"
+"175","s_122","Land-use change","Collembola","Physiological"
+"176","s_125","Conservation agriculture","Macroinvertebrates",NA
+"177","s_125","Conservation agriculture","Macroinvertebrates","Morphological"
+"178","s_130","Tillage management","Earthworms",NA
+"179","s_130","Tillage management","Earthworms","Morphological"
+"180","s_130",NA,"Earthworms",NA
+"181","s_131","Combined practices","Other insects",NA
+"182","s_131","Combined practices","Beetles",NA
+"183","s_131","Combined practices","Spiders",NA
+"184","s_131","Combined practices","Spiders","Morphological"
+"185","s_131","Combined practices","Beetles","Morphological"
+"186","s_131","Combined practices","Spiders","Ecological preference"
+"187","s_131","Combined practices","Spiders","Behavioral"
+"188","s_132_site_1","Crop diversification","Earthworms","Morphological"
+"189","s_132_site_2","Crop diversification","Earthworms","Morphological"
+"190","s_132_site_3","Crop diversification","Earthworms","Morphological"
+"191","s_132_site_4","Crop diversification","Earthworms","Morphological"
+"192","s_141","Crop diversification","Termites",NA
+"193","s_141","Crop diversification","Termites","Morphological"
+"194","s_141","Crop diversification","Earthworms",NA
+"195","s_141","Crop diversification","Earthworms","Morphological"
+"196","s_141","Fertilisers and amendments","Termites",NA
+"197","s_141","Fertilisers and amendments","Termites","Morphological"
+"198","s_141","Fertilisers and amendments","Earthworms",NA
+"199","s_141","Fertilisers and amendments","Earthworms","Morphological"
+"200","s_141","Tillage management","Termites",NA
+"201","s_141","Tillage management","Termites","Morphological"
+"202","s_141","Tillage management","Earthworms",NA
+"203","s_141","Tillage management","Earthworms","Morphological"
+"204","s_142","Agroforestry","Termites",NA
+"205","s_142","Agroforestry","Mollusks",NA
+"206","s_142","Agroforestry","Earthworms",NA
+"207","s_142","Agroforestry","Woodlice",NA
+"208","s_142","Agroforestry","Spiders",NA
+"209","s_142","Agroforestry","Millipedes",NA
+"210","s_142","Agroforestry","Other insects",NA
+"211","s_142","Agroforestry","Beetles",NA
+"212","s_142","Agroforestry","Macroinvertebrates",NA
+"213","s_142","Agroforestry","Mollusks","Morphological"
+"214","s_142","Agroforestry","Earthworms","Morphological"
+"215","s_142","Agroforestry","Woodlice","Morphological"
+"216","s_142","Agroforestry","Spiders","Morphological"
+"217","s_142","Agroforestry","Millipedes","Morphological"
+"218","s_142","Agroforestry","Other insects","Morphological"
+"219","s_142","Agroforestry","Beetles","Morphological"
+"220","s_142","Agroforestry","Termites","Morphological"
+"221","s_142","Agroforestry","Macroinvertebrates","Morphological"
+"222","s_142","Agroforestry","Macroinvertebrates","Ecological preference"
+"223","s_147","Landscape complexity","Earthworms","Morphological"
+"224","s_147","Landscape complexity","Earthworms",NA
+"225","s_147","Tillage management","Collembola",NA
+"226","s_147","Tillage management","Acari",NA
+"227","s_147","Tillage management","Other insects",NA
+"228","s_147","Organic agriculture","Spiders",NA
+"229","s_147","Combined practices","Spiders",NA
+"230","s_147","Organic agriculture","Beetles",NA
+"231","s_147","Combined practices","Beetles",NA
+"232","s_147","Organic agriculture","Ants",NA
+"233","s_147","Combined practices","Ants",NA
+"234","s_147","Organic agriculture","Other insects",NA
+"235","s_147","Combined practices","Other insects",NA
+"236","s_147","Organic agriculture","Millipedes",NA
+"237","s_147","Combined practices","Millipedes",NA
+"238","s_147","Organic agriculture","Woodlice",NA
+"239","s_147","Combined practices","Woodlice",NA
+"240","s_147","Organic agriculture","Other arachnids",NA
+"241","s_147","Combined practices","Other arachnids",NA
+"242","s_155","Pest and disease management","Spiders",NA
+"243","s_155","Pest and disease management","Spiders","Behavioral"
+"244","s_155","Pest and disease management","Spiders","Phenological"
+"245","s_155","Pest and disease management","Spiders","Morphological"
+"246","s_163","Crop diversification","Earthworms",NA
+"247","s_163","Crop diversification","Earthworms","Morphological"
+"248","s_184","Landscape complexity","Acari","Morphological"
+"249","s_184","Landscape complexity","Collembola","Morphological"
+"250","s_204","Residues management","Earthworms","Morphological"
+"251","s_204","Crop diversification","Earthworms","Morphological"
+"252","s_172","Landscape complexity","Invertebrates","Morphological"
+"253","s_172","Landscape complexity","Other insects",NA
+"254","s_172","Landscape complexity","Beetles",NA
+"255","s_172","Landscape complexity","Ants",NA
+"256","s_172","Landscape complexity","Spiders",NA
+"257","s_193","Organic agriculture","Tardigrada",NA
+"258","s_193","Organic agriculture","Acari",NA
+"259","s_193","Organic agriculture","Earthworms",NA
+"260","s_193","Organic agriculture","Earthworms","Morphological"
+"261","s_168","Agroforestry","Earthworms",NA
+"262","s_167","Landscape complexity","Spiders",NA
+"263","s_167","Landscape complexity","Spiders","Morphological, Behavioral, Ecological preference, Ecological preference"
+"264","s_167","Landscape complexity","Spiders","Behavioral"
+"265","s_167","Landscape complexity","Spiders","Ecological preference"
+"266","s_167","Landscape complexity","Spiders","Morphological"
+"267","s_167","Crop diversification","Spiders",NA
+"268","s_167","Crop diversification","Spiders","Morphological, Behavioral, Ecological preference, Ecological preference"
+"269","s_167","Crop diversification","Spiders","Behavioral"
+"270","s_167","Crop diversification","Spiders","Ecological preference"
+"271","s_167","Crop diversification","Spiders","Morphological"
+"272","s_167","Organic agriculture","Spiders",NA
+"273","s_167","Organic agriculture","Spiders","Morphological, Behavioral, Ecological preference, Ecological preference"
+"274","s_167","Organic agriculture","Spiders","Behavioral"
+"275","s_167","Organic agriculture","Spiders","Ecological preference"
+"276","s_167","Organic agriculture","Spiders","Morphological"
+"277","s_167","Landscape complexity","Beetles",NA
+"278","s_167","Landscape complexity","Beetles","Morphological, Morphological, Phenological, Behavioral"
+"279","s_167","Landscape complexity","Beetles","Behavioral"
+"280","s_167","Landscape complexity","Beetles","Phenological"
+"281","s_167","Landscape complexity","Beetles","Morphological"
+"282","s_167","Crop diversification","Beetles",NA
+"283","s_167","Crop diversification","Beetles","Morphological, Morphological, Phenological, Behavioral"
+"284","s_167","Crop diversification","Beetles","Behavioral"
+"285","s_167","Crop diversification","Beetles","Phenological"
+"286","s_167","Crop diversification","Beetles","Morphological"
+"287","s_167","Organic agriculture","Beetles",NA
+"288","s_167","Organic agriculture","Beetles","Morphological, Morphological, Phenological, Behavioral"
+"289","s_167","Organic agriculture","Beetles","Behavioral"
+"290","s_167","Organic agriculture","Beetles","Phenological"
+"291","s_167","Organic agriculture","Beetles","Morphological"
+"292","s_167","Landscape complexity","Beetles","Na"
+"293","s_167","Landscape complexity","Beetles","Behavioral, Morphological"
+"294","s_167","Crop diversification","Beetles","Na"
+"295","s_167","Crop diversification","Beetles","Behavioral, Morphological"
+"296","s_167","Organic agriculture","Beetles","Na"
+"297","s_167","Organic agriculture","Beetles","Behavioral, Morphological"
+"298","s_167","Crop diversification",NA,NA
+"299","s_167","Landscape complexity",NA,NA
+"300","s_167",NA,"Macroinvertebrates",NA

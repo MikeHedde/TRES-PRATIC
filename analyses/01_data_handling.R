@@ -1,21 +1,25 @@
 # Dataset
 db <- read.csv("data/raw-data/raw_db.csv", h = T, sep = ",")
 
+db <- db %>%
+  mutate(across(where(is.character), str_squish)) %>% #plus d'espaces avant ou après les textes
+  filter(Study_ID != "s_127") #à enlever quand on aura traité l'art 127
+
 #Sous jeu de données synthétique au niveau des articles
+paper_db <- db %>%
+  select(Article_ID, Publication_Year, Newspaper) %>%
+  distinct()
+
+#Sous jeu de données synthétique au niveau des études
 paper_level_db <- db %>%
   select(Study_ID, Publication_Year, Newspaper, Study_country) %>%
-  distinct() %>%
-  filter(Study_ID != "s_127") #à enlever quand on aura traité l'art 127
+  distinct() 
   
 write.csv(x = paper_level_db, file = "data/derived-data/paper_level_db.csv")
 
 #Sous jeu de données synthétique croisant Intervention et Population
 PI_db <- db %>%
   select(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
-  distinct() %>%
-  filter(Study_ID != "s_127")%>% #à enlever quand on aura traité l'art 127
-  mutate(Intervention_R2 = recode(Intervention_R2,
-                                  "Organic agriculture " = "Organic agriculture",
-                                  "Agroforestry " = "Agroforestry"))
+  distinct()
 
 write.csv(x = PI_db, file = "data/derived-data/PI_db.csv")
