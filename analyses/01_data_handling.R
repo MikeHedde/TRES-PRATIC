@@ -7,7 +7,7 @@ db <- db %>%
 
 #Sous jeu de données synthétique au niveau des articles
 paper_db <- db %>%
-  select(Article_ID, Publication_Year, Newspaper) %>%
+  select(Article_ID, Latitude, Longitude, Publication_Year, Newspaper) %>%
   distinct()
 
 #Sous jeu de données synthétique au niveau des études
