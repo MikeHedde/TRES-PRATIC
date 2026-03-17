@@ -48,12 +48,22 @@ ggsave("Figures/01_paper_level/map_articles_country.png",
        width = 20, height = 8, dpi = 300)
 
 #############################################################
-# Figure showing the cummulated number of articles published per year
+# Figure showing the cumulated number of articles published per year
 #############################################################
+pub_year <- data.frame(
+  Publication_Year = seq(1995, 2022)) 
+
 year_counts <- paper_db %>%  #nrow = 40 : 41 articles moins le 127 pas encore traité exclu script 01
-  count(Publication_Year) %>%
-  arrange(Publication_Year)%>%
+  count(Publication_Year) 
+
+year_counts <- pub_year %>%
+  left_join(year_counts, by = "Publication_Year") 
+  
+year_counts <- year_counts %>%
+  mutate(n = ifelse(is.na(n), 0, n)) %>%
+  arrange(Publication_Year) %>%
   mutate(cum_articles = cumsum(n))
+
 
 ggplot(year_counts, aes(Publication_Year, cum_articles)) +
   geom_step(size = 1.2) +
@@ -96,7 +106,72 @@ ggsave("Figures/01_paper_level/cumulative_articles.png",
        units = "cm",
        dpi = 300)
 
+########################################################
+#Avec le ratio
+########################################################
+publications_trend <- read.csv("data/raw-data/total_publications_trend.csv", header = T, sep = ";")
+
+years_count_trend <- publications_trend %>%
+  arrange(Publication.Years) %>%
+  filter(Publication.Years >= 1996, Publication.Years <= 2022) %>%
+  rename(Publication_Year = Publication.Years) %>%
+  mutate(cum_articles = cumsum(Count)) %>%
+  left_join(year_counts, by = "Publication_Year") %>%
+  select(Publication_Year, cum_articles.x, cum_articles.y) %>%
+  mutate(Ratio = cum_articles.y/cum_articles.x)
+ 
+#ggplot(years_count_trend, 
+#       aes(x = Publication_Year)) +
+#  geom_step(aes(y = cum_articles.x), size = 1.2, color = "blue") +
+#  geom_point(aes(y = cum_articles.x), color = "blue") +
+#  geom_step(aes(y = cum_articles.y), size = 1.2, color = "red") +
+#  geom_point(aes(y = cum_articles.y), color = "red")
+
+ggplot(years_count_trend,
+       aes(x = Publication_Year, y = Ratio)) +
+  geom_step(size = 1.2, color = "blue") + #croissant : les études sur les traits augmentent plus vite que la tendance habituelle
+  geom_point(size = 2, color = "blue") + #décroissant : les études sur les traits augmentent moins vite que la tendance habituelle
+  
+# flèche Violle
+geom_segment(aes(x = 2007, xend = 2007,
+                 y = max(Ratio)-0.0001,
+                 yend = Ratio[Publication_Year == 2007]),
+             arrow = arrow(length = unit(0.2, "cm"))) +
+  
+  geom_text(aes(x = 2007,
+                y = max(Ratio),
+                label = "Violle et al. 2007"),
+            hjust = 0.5,
+            size = 3.5) +
+  
+  # flèche Pey
+  geom_segment(aes(x = 2014, xend = 2014,
+                   y = max(Ratio)-0.0001,
+                   yend = Ratio[Publication_Year == 2014]),
+               arrow = arrow(length = unit(0.2, "cm"))) +
+  
+  geom_text(aes(x = 2014,
+                y = max(Ratio),
+                label = "Pey et al. 2014"),
+            hjust = 0.5,
+            size = 3.5) +
+  
+  theme_classic() +
+  labs(
+    x = "Année de publication",
+    y = "Ratio atricles du corpus/ tendance générale"
+  ) +
+  expand_limits(y = max(year_counts$Ratio))
+
+ggsave("Figures/01_paper_level/cumulative_articles_ratio.png",
+       width = 18,
+       height = 12,
+       units = "cm",
+       dpi = 300)
+
+########################################################
 # Treemap des journaux
+########################################################
   ##nombre minimal d'articles pour considérer la revue
   threshold = 2
 
