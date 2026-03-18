@@ -4,6 +4,9 @@
 
 PI_db <- read.csv("data/derived-data/PI_db.csv") 
 
+#############################################################
+# Ordres
+#############################################################
 
 # Ordre des interventions (tu peux le modifier si besoin)
 intervention_order <- c(
@@ -12,15 +15,35 @@ intervention_order <- c(
   "Conservation agriculture",
   "Crop diversification",
   "Fertilisers and amendments",
+  "GMO",
   "Land-use change",
   "Landscape complexity",
+  "Organic agriculture",
+  "Pest and disease management",
+  "Residues management",
   "Tillage management",
   "Water management"
 )
 
-#############################################################
-# Ordres
-#############################################################
+taxa_order <- c(
+  "Invertebrates",
+  "Macroinvertebrates",
+  "Earthworms",
+  "Termites",
+  "Ants",
+  "Beetles",
+  "Other insects",
+  "Spiders",
+  "Other arachnids",
+  "Woodlice",
+  "Millipedes",
+  "Mollusks",
+  "Microinvertebrates",
+  "Acari",
+  "Collembola",
+  "Tardigrada"
+)
+
 
 # Données pour la figure "camemberts dans la matrice"
 trait_pie_data <- PI_db %>%
@@ -34,16 +57,16 @@ trait_totals <- trait_pie_data %>%
 
 
 # ordre des interventions = ordre d'apparition dans les données
-intervention_order <- trait_pie_data %>%
-  filter(!is.na(Intervention_R2)) %>%
-  pull(Intervention_R2) %>%
-  unique()
+#intervention_order <- trait_pie_data %>%
+#  filter(!is.na(Intervention_R2)) %>%
+#  pull(Intervention_R2) %>%
+#  unique()
 
 # ordre des taxons : on garde seulement ceux présents dans trait_pie_data
-taxa_order <- trait_pie_data %>%
-  filter(!is.na(Population_homogenized)) %>%
-  pull(Population_homogenized) %>%
-  unique()
+#taxa_order <- trait_pie_data %>%
+#  filter(!is.na(Population_homogenized)) %>%
+#  pull(Population_homogenized) %>%
+#  unique()
 
 #############################################################
 # Données pies
