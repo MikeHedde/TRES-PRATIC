@@ -8,42 +8,41 @@ PI_db <- read.csv("data/derived-data/PI_db.csv")
 # Ordres
 #############################################################
 
-# Ordre des interventions (tu peux le modifier si besoin)
+# Ordre des interventions
 intervention_order <- c(
-  "Agroforestry",
-  "Combined practices",
-  "Conservation agriculture",
-  "Crop diversification",
-  "Fertilisers and amendments",
-  "GMO",
-  "Land-use change",
-  "Landscape complexity",
-  "Organic agriculture",
-  "Pest and disease management",
-  "Residues management",
   "Tillage management",
-  "Water management"
+  "Crop diversification",
+  "Organic agriculture",
+  "Landscape complexity",
+  "Land-use change",
+  "Combined practices",
+  "Agroforestry",
+  "Fertilisers and amendments",
+  "Water management",
+  "Residues management",
+  "Pest and disease management",
+  "GMO",
+  "Conservation agriculture"
 )
 
 taxa_order <- c(
-  "Invertebrates",
-  "Macroinvertebrates",
   "Earthworms",
+  "Beetles",
+  "Spiders",
+  "Macroinvertebrates",
+  "Collembola",
+  "Other insects",
+  "Microinvertebrates",
+  "Millipedes",
+  "Acari",
   "Termites",
   "Ants",
-  "Beetles",
-  "Other insects",
-  "Spiders",
-  "Other arachnids",
   "Woodlice",
-  "Millipedes",
+  "Invertebrates",
+  "Other arachnids",
   "Mollusks",
-  "Microinvertebrates",
-  "Acari",
-  "Collembola",
   "Tardigrada"
 )
-
 
 # Données pour la figure "camemberts dans la matrice"
 trait_pie_data <- PI_db %>%

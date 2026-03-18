@@ -4,29 +4,48 @@ PI_db <- read.csv("data/derived-data/PI_db.csv")
 # 1. Ordre logique pour la représentation
 ########################################################
 
+intervention_order <- c(
+  "Tillage management",
+  "Crop diversification",
+  "Organic agriculture",
+  "Landscape complexity",
+  "Land-use change",
+  "Combined practices",
+  "Agroforestry",
+  "Fertilisers and amendments",
+  "Water management",
+  "Residues management",
+  "Pest and disease management",
+  "GMO",
+  "Conservation agriculture"
+)
+
+
 order_taxa <- c(
-  "Invertebrates",
-  "Macroinvertebrates",
   "Earthworms",
+  "Beetles",
+  "Spiders",
+  "Macroinvertebrates",
+  "Collembola",
+  "Other insects",
+  "Microinvertebrates",
+  "Millipedes",
+  "Acari",
   "Termites",
   "Ants",
-  "Beetles",
-  "Other insects",
-  "Spiders",
-  "Other arachnids",
   "Woodlice",
-  "Millipedes",
+  "Invertebrates",
+  "Other arachnids",
   "Mollusks",
-  "Microinvertebrates",
-  "Acari",
-  "Collembola",
   "Tardigrada"
 )
 
 PI_db <- PI_db %>%
   mutate(
     Population_homogenized =
-      factor(Population_homogenized, levels = rev(order_taxa))
+      factor(Population_homogenized, levels = rev(order_taxa)),
+    Intervention_R2 =
+      factor(Intervention_R2, levels = intervention_order)
   )
 
 #############################################################
