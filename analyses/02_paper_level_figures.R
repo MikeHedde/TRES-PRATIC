@@ -22,26 +22,22 @@ missing_countries <- setdiff(
 
 missing_countries
 
-# Comment est nommée Czech Republic dans la base Natural Earth
-#world %>%
-#  filter(grepl("Czech", name))
-
-# on change le nom dans articles_per_country -> fait sur la bdd
-#articles_per_country <- articles_per_country %>%
-# mutate(
-#    Country = ifelse(Country == "Czech Republic",
-#                     "Czechia",
-#                     Country)
-# )
 
 fig_chloropeth <- ggplot(map_data) +
   geom_sf(aes(fill = n), color = "grey40", size = 0.1) +
-  scale_fill_viridis_c(
-    option = "plasma",
-    na.value = "grey95",
-    name = "Number of \narticles"
-  ) +
-  theme_minimal()
+  scale_fill_gradient(
+    low = "lightblue",
+    high = "darkblue",
+    name = "Nombre\nd'études") +
+  theme_minimal() +
+
+geom_point(
+  data = paper_level_db,
+  aes(x = Longitude, y = Latitude),
+  color = "red",
+  size = 1.5,
+  alpha = 0.7
+)
 
 ggsave("Figures/01_paper_level/map_articles_country.png", 
        plot = fig_chloropeth,
