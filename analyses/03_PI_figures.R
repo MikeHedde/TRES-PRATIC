@@ -1,9 +1,9 @@
 # Dataset
 PI_db <- read.csv("data/derived-data/PI_db.csv") 
+
 ########################################################
 # 1. Ordre logique pour la représentation
 ########################################################
-
 intervention_order <- c(
   "Tillage management",
   "Crop diversification",
@@ -19,7 +19,6 @@ intervention_order <- c(
   "GMO",
   "Conservation agriculture"
 )
-
 
 order_taxa <- c(
   "Earthworms",
@@ -48,10 +47,52 @@ PI_db <- PI_db %>%
       factor(Intervention_R2, levels = intervention_order)
   )
 
+################################################
+#Traduction en français
+################################################
+PI_db <- PI_db %>%
+  mutate(
+    Intervention_R2 = recode(
+      Intervention_R2,
+      "Tillage management" = "Travail du sol",
+      "Crop diversification" = "Diversification des cultures",
+      "Organic agriculture" = "Agriculture biologique",
+      "Landscape complexity" = "Complexité du paysage",
+      "Land-use change" = "Reclassification des terres",
+      "Combined practices" = "Pratiques multiples",
+      "Agroforestry" = "Agroforesterie",
+      "Fertilisers and amendments" = "Engrais",
+      "Water management" = "Gestion de l'eau",
+      "Residues management" = "Gestion des déchets",
+      "Pest and disease management" = "Utilisation des pesticides",
+      "GMO" = "OGM",
+      "Conservation agriculture" = "Agriculture de conservation"
+      ),
+    
+    Population_homogenized = recode(
+      Population_homogenized,
+      "Earthworms" = "Vers de terre",
+      "Beetles" = "Scarabées",
+      "Spiders" = "Araignées",
+      "Macroinvertebrates" = "Macroinvertébrés",
+      "Collembola" = "Collemboles",
+      "Other insects" = "Autres insectes",
+      "Microinvertebrates" = "Microinvertébrés",
+      "Millipedes" = "Mille-pattes",
+      "Acari" = "Acariens",
+      "Termites" = "Termites",
+      "Ants" = "Fourmis",
+      "Woodlice" = "Cloportes",
+      "Invertebrates" = "Invertébrés",
+      "Other arachnids" = "Autres arachnides",
+      "Mollusks" = "Mollusques",
+      "Tardigrada" = "Tardigrades"
+      )
+    )
+    
 #############################################################
 # 2. Agrégation
 #############################################################
-
 heatmap_data <- PI_db %>% #Tableau avec une colonne pour le nombre d'occurrences de chaque couple intervention/population
   distinct(Study_ID, Intervention_R2, Population_homogenized) %>%
   count(Intervention_R2, Population_homogenized, name = "n")
@@ -104,14 +145,13 @@ theme_pub <- theme_minimal(base_size = 12) +
 #############################################################
 # 4. Heatmap
 #############################################################
-
 p_heat <- ggplot(
   heatmap_data,
   aes(x = Intervention_R2, y = Population_homogenized, fill = n)
 ) +
   geom_tile(color = "white", linewidth = 0.45) +
   scale_fill_viridis_c(
-    name = "Number \nof studies",
+    name = "Nombre\nd'études",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(35, "mm"),
@@ -121,8 +161,8 @@ p_heat <- ggplot(
     )
   ) +
   labs(
-    x = "Intervention type",
-    y = "Soil fauna group"
+    x = "Type d'intervention",
+    y = "Groupe faunistique"
   ) +
   theme_pub +
   theme(
@@ -136,7 +176,6 @@ p_heat <- ggplot(
 #############################################################
 # 5. Marginale haute
 #############################################################
-
 p_top <- ggplot(
   intervention_counts,
   aes(x = Intervention_R2, y = n)
@@ -163,7 +202,6 @@ p_top <- ggplot(
 #############################################################
 # 6. Marginale droite
 #############################################################
-
 p_right <- ggplot(
   pop_counts,
   aes(x = n, y = Population_homogenized)
@@ -190,7 +228,6 @@ p_right <- ggplot(
 #############################################################
 # 7. Assemblage final
 #############################################################
-
 # 1. Heatmap avec légende
 p_heat_leg <- p_heat +
   theme(
@@ -199,7 +236,7 @@ p_heat_leg <- p_heat +
     legend.box.margin = margin(0, 0, 0, 0)
   ) +
   scale_fill_viridis_c(
-    name = "Number \nof studies",
+    name = "Nombre\nd'études",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(28, "mm"),
@@ -249,9 +286,9 @@ final_plot
   )
   
   
-  #############################################################
-  # Figure A. Distribution of interventions
-  #############################################################
+#############################################################
+# Figure A. Distribution of interventions
+#############################################################
   
   fig_intervention_counts <- ggplot(
     intervention_counts,
@@ -266,8 +303,8 @@ final_plot
     ) +
     geom_point(size = 8, color = "#2C7FB8") +
     labs(
-      title = "Distribution of interventions",
-      x = "Number of studies",
+      #title = "Distribution des interventions",
+      x = "Nombre d'études",
       y = NULL
     ) +
     theme_classic(base_size = 16) +
@@ -287,9 +324,9 @@ final_plot
     bg = "white"
   )
   
-  #############################################################
-  # Figure B. Distribution of soil fauna groups
-  #############################################################
+#############################################################
+# Figure B. Distribution of soil fauna groups
+#############################################################
   
   fig_pop_counts <- ggplot(
     pop_counts,
@@ -304,7 +341,7 @@ final_plot
     ) +
     geom_point(size = 8, color = "#E41A1C") +
     labs(
-      x = "Number of studies",
+      x = "Nombre d'études",
       y = NULL
     ) +
     theme_classic(base_size = 16) +

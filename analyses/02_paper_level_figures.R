@@ -91,8 +91,8 @@ ggplot(year_counts, aes(Publication_Year, cum_articles)) +
   
   theme_classic() +
   labs(
-    x = "Publication year",
-    y = "Cumulative number of papers"
+    x = "Année de publication",
+    y = "Nombre cumulé d'articles"
   ) +
   expand_limits(y = max(year_counts$cum_articles) + 8)
 
@@ -174,7 +174,7 @@ ggsave("Figures/01_paper_level/cumulative_articles_ratio.png",
 journal_counts <- paper_db %>%
   distinct(Article_ID, Newspaper) %>%
   count(Newspaper, sort = TRUE) %>%
-  mutate(Newspaper = ifelse(n < threshold, "Other journals", Newspaper))%>%
+  mutate(Newspaper = ifelse(n < threshold, "Autres journaux", Newspaper))%>%
   group_by(Newspaper) %>%
   summarise(n = sum(n))
 
@@ -190,7 +190,7 @@ journal_treemap <- ggplot(journal_counts,
   ) +
   theme_minimal() +
   guides(fill = "none") +
-  labs(title = "Distribution of articles by journal")
+  labs(title = "Distribution des articles par journaux")
 
 ggsave("Figures/01_paper_level/journal_treemap.png",
        width = 18,
