@@ -64,7 +64,7 @@ PI_db <- PI_db %>%
       "Fertilisers and amendments" = "Engrais",
       "Water management" = "Gestion de l'eau",
       "Residues management" = "Gestion des déchets",
-      "Pest and disease management" = "Utilisation des pesticides",
+      "Pest and disease management" = "Gestion des ravageurs et maladies",
       "GMO" = "OGM",
       "Conservation agriculture" = "Agriculture de conservation"
       ),

@@ -1,49 +1,93 @@
 #############################################################
 # Figure C. Trait-group composition by intervention and fauna
 #############################################################
-
 PI_db <- read.csv("data/derived-data/PI_db.csv") 
 
-#############################################################
-# Ordres
-#############################################################
-
-# Ordre des interventions
-intervention_order <- c(
-  "Tillage management",
-  "Crop diversification",
-  "Organic agriculture",
-  "Landscape complexity",
-  "Land-use change",
-  "Combined practices",
-  "Agroforestry",
-  "Fertilisers and amendments",
-  "Water management",
-  "Residues management",
-  "Pest and disease management",
-  "GMO",
-  "Conservation agriculture"
+######################################################
+#Recodage en français puis factorisation (définition de l'ordre)
+######################################################
+intervention_order_fr <- c(
+  "Travail du sol",
+  "Diversification des cultures",
+  "Agriculture biologique",
+  "Complexité du paysage",
+  "Reclassification des terres",
+  "Pratiques multiples",
+  "Agroforesterie",
+  "Engrais",
+  "Gestion de l'eau",
+  "Gestion des déchets",
+  "Gestion des ravageurs et maladies",
+  "OGM",
+  "Agriculture de conservation"
 )
 
-taxa_order <- c(
-  "Earthworms",
-  "Beetles",
-  "Spiders",
-  "Macroinvertebrates",
-  "Collembola",
-  "Other insects",
-  "Microinvertebrates",
-  "Millipedes",
-  "Acari",
+taxa_order_fr <- c(
+  "Vers de terre",
+  "Scarabées",
+  "Araignées",
+  "Macroinvertébrés",
+  "Collemboles",
+  "Autres insectes",
+  "Microinvertébrés",
+  "Mille-pattes",
+  "Acariens",
   "Termites",
-  "Ants",
-  "Woodlice",
-  "Invertebrates",
-  "Other arachnids",
-  "Mollusks",
-  "Tardigrada"
+  "Fourmis",
+  "Cloportes",
+  "Invertébrés",
+  "Autres arachnides",
+  "Mollusques",
+  "Tardigrades"
 )
 
+PI_db <- PI_db %>%
+  mutate(
+    Intervention_R2 = recode(
+      Intervention_R2,
+      "Tillage management" = "Travail du sol",
+      "Crop diversification" = "Diversification des cultures",
+      "Organic agriculture" = "Agriculture biologique",
+      "Landscape complexity" = "Complexité du paysage",
+      "Land-use change" = "Reclassification des terres",
+      "Combined practices" = "Pratiques multiples",
+      "Agroforestry" = "Agroforesterie",
+      "Fertilisers and amendments" = "Engrais",
+      "Water management" = "Gestion de l'eau",
+      "Residues management" = "Gestion des déchets",
+      "Pest and disease management" = "Gestion des ravageurs et maladies",
+      "GMO" = "OGM",
+      "Conservation agriculture" = "Agriculture de conservation"
+    ),
+    
+    Population_homogenized = recode(
+      Population_homogenized,
+      "Earthworms" = "Vers de terre",
+      "Beetles" = "Scarabées",
+      "Spiders" = "Araignées",
+      "Macroinvertebrates" = "Macroinvertébrés",
+      "Collembola" = "Collemboles",
+      "Other insects" = "Autres insectes",
+      "Microinvertebrates" = "Microinvertébrés",
+      "Millipedes" = "Mille-pattes",
+      "Acari" = "Acariens",
+      "Ants" = "Fourmis",
+      "Woodlice" = "Cloportes",
+      "Invertebrates" = "Invertébrés",
+      "Other arachnids" = "Autres arachnides",
+      "Mollusks" = "Mollusques",
+      "Tardigrada" = "Tardigrades"
+    )
+  ) %>%
+  mutate(
+    Intervention_R2 = factor(
+      Intervention_R2, levels = intervention_order_fr
+      ),
+    Population_homogenized = factor(
+      Population_homogenized, levels = rev(taxa_order_fr))
+    )
+
+#################################################################
 # Données pour la figure "camemberts dans la matrice"
 trait_pie_data <- PI_db %>%
   distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
@@ -70,7 +114,6 @@ trait_totals <- trait_pie_data %>%
 #############################################################
 # Données pies
 #############################################################
-
 trait_pie_wide <- trait_pie_data %>%
   filter(
     !is.na(Intervention_R2),
@@ -96,8 +139,8 @@ trait_pie_wide <- trait_pie_wide %>%
     total = Morphological + Physiological + `Ecological preference` + Behavioral + Phenological
   ) %>%
   mutate(
-    Intervention_R2 = factor(Intervention_R2, levels = intervention_order),
-    Population_homogenized = factor(Population_homogenized, levels = rev(taxa_order))
+    Intervention_R2 = factor(Intervention_R2, levels = intervention_order_fr),
+    Population_homogenized = factor(Population_homogenized, levels = rev(taxa_order_fr))
   ) %>%
   mutate(
     x = as.integer(Intervention_R2),
@@ -111,15 +154,14 @@ trait_pie_wide <- trait_pie_wide %>%
 #############################################################
 # Grille de fond complète
 #############################################################
-
 grid_df <- expand.grid(
-  Intervention_R2 = intervention_order,
-  Population_homogenized = rev(taxa_order),
+  Intervention_R2 = intervention_order_fr,
+  Population_homogenized = rev(taxa_order_fr),
   stringsAsFactors = FALSE
 ) %>%
   mutate(
-    Intervention_R2 = factor(Intervention_R2, levels = intervention_order),
-    Population_homogenized = factor(Population_homogenized, levels = rev(taxa_order)),
+    Intervention_R2 = factor(Intervention_R2, levels = intervention_order_fr),
+    Population_homogenized = factor(Population_homogenized, levels = rev(taxa_order_fr)),
     x = as.integer(Intervention_R2),
     y = as.integer(Population_homogenized)
   )
@@ -146,13 +188,13 @@ fig_heatmap_traits <- ggplot() +
     linewidth = 0.5
   ) +
   scale_x_continuous(
-    breaks = seq_along(intervention_order),
-    labels = intervention_order,
+    breaks = seq_along(intervention_order_fr),
+    labels = intervention_order_fr,
     expand = expansion(add = 0.5)
   ) +
   scale_y_continuous(
-    breaks = seq_along(rev(taxa_order)),
-    labels = rev(taxa_order),
+    breaks = seq_along(rev(taxa_order_fr)),
+    labels = rev(taxa_order_fr),
     expand = expansion(add = 0.5)
   ) +
   coord_equal() +
@@ -163,13 +205,26 @@ fig_heatmap_traits <- ggplot() +
       "Ecological preference" = "#00BFC4",
       "Behavioral" = "#C77CFF",
       "Phenological" = "#C88"
+      ),
+    breaks = c(
+      "Morphological", 
+      "Physiological", 
+      "Ecological preference", 
+      "Behavioral", 
+      "Phenological"
+      ),
+    labels = c(
+      "Morphologique",
+      "Physiologique",
+      "Préférence écologique",
+      "Comportemental",
+      "Phénologique"
     ),
-    breaks = c("Morphological", "Physiological", "Ecological preference", "Behavioral", "Phenological"),
-    name = "type"
+    name = "Type de trait"
   ) +
   labs(
-    x = "Intervention type",
-    y = "Soil fauna group"
+    x = "Type d'intervention",
+    y = "Groupe faunistique"
   ) +
   theme_minimal(base_size = 8) +
   theme(
