@@ -1,4 +1,3 @@
-
 # Dataset
 paper_level_db <- read.csv("data/derived-data/paper_level_db.csv") 
 
@@ -155,7 +154,7 @@ geom_segment(aes(x = 2007, xend = 2007,
   theme_classic() +
   labs(
     x = "Année de publication",
-    y = "Ratio atricles du corpus/ tendance générale"
+    y = "Ratio des articles du corpus sur la littérature générale"
   ) +
   expand_limits(y = max(year_counts$Ratio))
 

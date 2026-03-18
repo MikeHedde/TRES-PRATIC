@@ -289,7 +289,6 @@ final_plot
 #############################################################
 # Figure A. Distribution of interventions
 #############################################################
-  
   fig_intervention_counts <- ggplot(
     intervention_counts,
     aes(x = n, y = reorder(Intervention_R2, n))
@@ -302,6 +301,9 @@ final_plot
       linewidth = 1
     ) +
     geom_point(size = 8, color = "#2C7FB8") +
+    scale_x_continuous(
+      breaks = seq(0, max(intervention_counts$n), by = 1)
+      ) +
     labs(
       #title = "Distribution des interventions",
       x = "Nombre d'études",
@@ -327,7 +329,6 @@ final_plot
 #############################################################
 # Figure B. Distribution of soil fauna groups
 #############################################################
-  
   fig_pop_counts <- ggplot(
     pop_counts,
     aes(x = n, y = reorder(Population_homogenized, n))
