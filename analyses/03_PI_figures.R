@@ -61,7 +61,7 @@ PI_db <- PI_db %>%
       "Land-use change" = "Reclassification des terres",
       "Combined practices" = "Pratiques multiples",
       "Agroforestry" = "Agroforesterie",
-      "Fertilisers and amendments" = "Engrais",
+      "Fertilisers and amendments" = "Fertilisation",
       "Water management" = "Gestion de l'eau",
       "Residues management" = "Gestion des déchets",
       "Pest and disease management" = "Gestion des ravageurs et maladies",
@@ -72,7 +72,7 @@ PI_db <- PI_db %>%
     Population_homogenized = recode(
       Population_homogenized,
       "Earthworms" = "Vers de terre",
-      "Beetles" = "Scarabées",
+      "Beetles" = "Carabidés",
       "Spiders" = "Araignées",
       "Macroinvertebrates" = "Macroinvertébrés",
       "Collembola" = "Collemboles",

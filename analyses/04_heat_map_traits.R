@@ -151,7 +151,7 @@ fig_heatmap_traits <- ggplot() +
       "Reclassification des terres",
       "Pratiques multiples",
       "Agroforesterie",
-      "Engrais",
+      "Fertilisation",
       "Gestion de l'eau",
       "Gestion des déchets",
       "Gestion des ravageurs et maladies",
@@ -165,7 +165,7 @@ fig_heatmap_traits <- ggplot() +
     labels = rev(
       c(
         "Vers de terre",
-        "Scarabées",
+        "Carabidés",
         "Araignées",
         "Macroinvertébrés",
         "Collemboles",
