@@ -5,35 +5,35 @@ CS_db <- read.csv("data/derived-data/CS_db.csv")
 # 1. Ordre logique pour la représentation
 ########################################################
 intervention_order <- c(
-  "Tillage management",
-  "Crop diversification",
-  "Organic agriculture",
   "Landscape complexity",
-  "Land-use change",
-  "Combined practices",
   "Agroforestry",
+  "Organic agriculture",
+  "Combined practices",
+  "Tillage management",
+  "Land-use change",
+  "Crop diversification",
+  "Pest and disease management",
+  "GMO",
   "Fertilisers and amendments",
   "Water management",
   "Residues management",
-  "Pest and disease management",
-  "GMO",
   "Conservation agriculture"
 )
 
-order_taxa <- c(
+order_taxa <- c( #tardigrada et other arachnids n'apparaissent pas ici car que des données taxo
+  "Collembola",
   "Earthworms",
+  "Acari",
   "Beetles",
   "Spiders",
   "Macroinvertebrates",
-  "Collembola",
-  "Other insects",
-  "Microinvertebrates",
-  "Millipedes",
-  "Acari",
-  "Termites",
-  "Ants",
-  "Woodlice",
   "Invertebrates",
+  "Termites",
+  "Millipedes",
+  "Other insects",
+  "Ants",
+  "Microinvertebrates",
+  "Woodlice",
   "Other arachnids",
   "Mollusks",
   "Tardigrada"
