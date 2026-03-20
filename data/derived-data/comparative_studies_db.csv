@@ -1,0 +1,687 @@
+"","Study_ID","Population_homogenized","Intervention_R2","Comparator","Outcome_indicator","Class"
+"1","s_5","Earthworms","Tillage management","Direct-seeding","Specific richness",NA
+"2","s_5","Earthworms","Tillage management","Superficial tillage","Specific richness",NA
+"3","s_5","Earthworms","Tillage management","Direct-seeding","Surface density",NA
+"4","s_5","Earthworms","Tillage management","Superficial tillage","Surface density",NA
+"5","s_5","Earthworms","Tillage management","Direct-seeding","Rao's quadratic diversity",NA
+"6","s_5","Earthworms","Tillage management","Superficial tillage","Rao's quadratic diversity",NA
+"7","s_5","Earthworms","Tillage management","Direct-seeding","CWM",NA
+"8","s_5","Earthworms","Tillage management","Superficial tillage","CWM",NA
+"9","s_5","Earthworms","Tillage management","Direct seeding","CWM",NA
+"10","s_5","Earthworms","Tillage management","Direct seeding","Surface density",NA
+"11","s_7","Beetles","GMO","Conventional","Surface density",NA
+"12","s_7","Beetles","GMO","Conventional","Dry weight",NA
+"13","s_7","Beetles","GMO","Conventional","Body length",NA
+"14","s_7","Collembola","GMO","Conventional","Surface density",NA
+"15","s_7","Collembola","GMO","Conventional","Dry weight",NA
+"16","s_7","Collembola","GMO","Conventional","Body length",NA
+"17","s_7","Spiders","GMO","Conventional","Surface density",NA
+"18","s_7","Spiders","GMO","Conventional","Dry weight",NA
+"19","s_7","Spiders","GMO","Conventional","Body length",NA
+"20","s_7","Invertebrates","GMO","Conventional","Canonical Variates Analyses",NA
+"21","s_8","Collembola","Organic agriculture","Conventional","Functional richness (FRic)",NA
+"22","s_8","Collembola","Combined practices","Conventional","Functional richness (FRic)",NA
+"23","s_8","Collembola","Organic agriculture","Intensively-used meadow","Functional richness (FRic)",NA
+"24","s_8","Collembola","Organic agriculture","Extensively-used meadow","Functional richness (FRic)",NA
+"25","s_8","Collembola","Organic agriculture","Extensively-used pasture","Functional richness (FRic)",NA
+"26","s_8","Collembola","Combined practices","Extensively-used meadow","Functional richness (FRic)",NA
+"27","s_8","Collembola","Combined practices","Extensively-used pasture","Functional richness (FRic)",NA
+"28","s_8","Collembola","Organic agriculture","Conventional","Functional evenness (FEve)",NA
+"29","s_8","Collembola","Combined practices","Conventional","Functional evenness (FEve)",NA
+"30","s_8","Collembola","Organic agriculture","Intensively-used meadow","Functional evenness (FEve)",NA
+"31","s_8","Collembola","Organic agriculture","Extensively-used meadow","Functional evenness (FEve)",NA
+"32","s_8","Collembola","Organic agriculture","Extensively-used pasture","Functional evenness (FEve)",NA
+"33","s_8","Collembola","Combined practices","Extensively-used meadow","Functional evenness (FEve)",NA
+"34","s_8","Collembola","Combined practices","Extensively-used pasture","Functional evenness (FEve)",NA
+"35","s_8","Collembola","Organic agriculture","Conventional","CWM",NA
+"36","s_8","Collembola","Combined practices","Conventional","CWM",NA
+"37","s_8","Collembola","Organic agriculture","Intensively-used meadow","CWM",NA
+"38","s_8","Collembola","Organic agriculture","Extensively-used meadow","CWM",NA
+"39","s_8","Collembola","Organic agriculture","Extensively-used pasture","CWM",NA
+"40","s_8","Collembola","Combined practices","Extensively-used meadow","CWM",NA
+"41","s_8","Collembola","Combined practices","Extensively-used pasture","CWM",NA
+"42","s_8","Collembola","Organic agriculture","Conventional","NMDS",NA
+"43","s_8","Collembola","Combined practices","Conventional","NMDS",NA
+"44","s_8","Collembola","Organic agriculture","Intensively-used meadow","NMDS",NA
+"45","s_8","Collembola","Organic agriculture","Extensively-used meadow","NMDS",NA
+"46","s_8","Collembola","Organic agriculture","Extensively-used pasture","NMDS",NA
+"47","s_8","Collembola","Combined practices","Extensively-used meadow","NMDS",NA
+"48","s_8","Collembola","Combined practices","Extensively-used pasture","NMDS",NA
+"49","s_24","Spiders","Organic agriculture","Conventional","CWM",NA
+"50","s_24","Spiders","Organic agriculture","Conventional","Functional Diversity variance (FDvar)",NA
+"51","s_24","Spiders","Organic agriculture","Conventional","RLQ",NA
+"52","s_24","Beetles","Organic agriculture","Conventional","CWM",NA
+"53","s_24","Beetles","Organic agriculture","Conventional","Functional Diversity variance (FDvar)",NA
+"54","s_24","Beetles","Organic agriculture","Conventional","RLQ",NA
+"55","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","CWM",NA
+"56","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Ballooning common"
+"57","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Ballooning less common"
+"58","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Ballooning uncommon"
+"59","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Ground hunters"
+"60","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Sheet-web hunters"
+"61","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","CWM",NA
+"62","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Winged"
+"63","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Dimorphic"
+"64","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Shortwinged"
+"65","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Herbivores"
+"66","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Proportion of species","Predators"
+"67","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","Specific richness",NA
+"68","s_25","Spiders","Landscape complexity","Herbaceous linear landscape elements","FDis",NA
+"69","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","FDis",NA
+"70","s_25","Beetles","Landscape complexity","Herbaceous linear landscape elements","Specific richness",NA
+"71","s_27","Macroinvertebrates","Land-use change","Grassland","Relative effect of estimates",NA
+"72","s_27","Macroinvertebrates","Land-use change","Grassland","Multi-trait diversity (scaled)",NA
+"73","s_32","Earthworms","Combined practices",NA,"RDA",NA
+"74","s_32","Earthworms","Crop diversification","Permanent meadow","Surface density",NA
+"75","s_32","Earthworms","Crop diversification","Permanent crop","Surface density",NA
+"76","s_32","Earthworms","Fertilisers and amendments","No slurry","Surface density",NA
+"77","s_32","Macroinvertebrates","Crop diversification","Permanent meadow","Surface density",NA
+"78","s_32","Macroinvertebrates","Crop diversification","Permanent crop","Surface density",NA
+"79","s_32","Macroinvertebrates","Fertilisers and amendments","No slurry","Surface density",NA
+"80","s_32","Collembola","Crop diversification","Permanent meadow","Surface density",NA
+"81","s_32","Collembola","Crop diversification","Permanent crop","Surface density",NA
+"82","s_32","Collembola","Fertilisers and amendments","No slurry","Surface density",NA
+"83","s_32","Macroinvertebrates","Combined practices",NA,"RDA",NA
+"84","s_32","Microinvertebrates","Combined practices",NA,"RDA",NA
+"85","s_36","Beetles","Combined practices","Field margin","Biomass",NA
+"86","s_36","Beetles","Combined practices","Crop wheat","Biomass",NA
+"87","s_36","Beetles","Combined practices","Field margin Tussock","Biomass",NA
+"88","s_36","Beetles","Combined practices","Field margin P&N","Biomass",NA
+"89","s_36","Beetles","Combined practices","Field margin Wild Bird","Biomass",NA
+"90","s_36","Beetles","Combined practices","Field margin Wild Flower","Biomass",NA
+"91","s_36","Beetles","Combined practices","Field margin Wildflower","Biomass",NA
+"92","s_36","Beetles","Combined practices","Intercept","Biomass",NA
+"93","s_36","Beetles","Combined practices","Intercept","Specific richness",NA
+"94","s_36","Beetles","Combined practices","Intercept","FD",NA
+"95","s_36","Beetles","Combined practices","Intercept","FDmovement",NA
+"96","s_36","Beetles","Combined practices","Intercept","FDsize",NA
+"97","s_36","Beetles","Combined practices","Intercept","FDlocation",NA
+"98","s_36","Beetles","Combined practices","No field margin tussock","FD",NA
+"99","s_36","Beetles","Combined practices","No oilseed rape crop","FDmovement",NA
+"100","s_29","Acari","Land-use change","No CC","Surface density",NA
+"101","s_29","Woodlice","Land-use change","No CC","Surface density",NA
+"102","s_29","Millipedes","Land-use change","No CC","Surface density",NA
+"103","s_29","Beetles","Land-use change","No CC","Surface density",NA
+"104","s_29","Collembola","Land-use change","No CC","Surface density",NA
+"105","s_29","Other insects","Land-use change","No CC","Surface density",NA
+"106","s_29","Microinvertebrates","Land-use change","No CC","Surface density",NA
+"107","s_29","Invertebrates","Land-use change","No CC","Simpson index",NA
+"108","s_29","Invertebrates","Land-use change","No CC","Shannon diversity index",NA
+"109","s_29","Invertebrates","Land-use change","No CC","Pielou’s evenness index",NA
+"110","s_29","Invertebrates","Land-use change","No CC","QBS-ar",NA
+"111","s_29","Earthworms","Land-use change","No CC","Surface density",NA
+"112","s_29","Earthworms","Land-use change","No CC","Biomass",NA
+"113","s_40","Spiders","Organic agriculture","Conventional","CWM",NA
+"114","s_40","Spiders","Crop diversification","Conventional","CWM",NA
+"115","s_40","Spiders","Landscape complexity","1 ha","CWM",NA
+"116","s_40","Beetles","Organic agriculture","Conventional","CWM",NA
+"117","s_40","Beetles","Crop diversification","Conventional","CWM",NA
+"118","s_40","Beetles","Landscape complexity","1 ha","CWM",NA
+"119","s_40","Spiders","Combined practices",NA,"RLQ",NA
+"120","s_40","Beetles","Combined practices",NA,"RLQ",NA
+"121","s_44_Site 1","Microinvertebrates","Tillage management","No till","QBS-ar",NA
+"122","s_44_Site 2","Microinvertebrates","Tillage management","No till","QBS-ar",NA
+"123","s_44_Site 3","Microinvertebrates","Tillage management","No till","QBS-ar",NA
+"124","s_44_Site 4","Microinvertebrates","Tillage management","No till","QBS-ar",NA
+"125","s_44_Site 5","Microinvertebrates","Tillage management","No till","QBS-ar",NA
+"126","s_44_Site 1","Earthworms","Tillage management","No till","Surface density",NA
+"127","s_44_Site 2","Earthworms","Tillage management","No till","Surface density",NA
+"128","s_44_Site 3","Earthworms","Tillage management","No till","Surface density",NA
+"129","s_44_Site 4","Earthworms","Tillage management","No till","Surface density",NA
+"130","s_44_Site 5","Earthworms","Tillage management","No till","Surface density",NA
+"131","s_44_Site 1","Earthworms","Tillage management","No till","Biomass",NA
+"132","s_44_Site 2","Earthworms","Tillage management","No till","Biomass",NA
+"133","s_44_Site 3","Earthworms","Tillage management","No till","Biomass",NA
+"134","s_44_Site 4","Earthworms","Tillage management","No till","Biomass",NA
+"135","s_44_Site 5","Earthworms","Tillage management","No till","Biomass",NA
+"136","s_46","Earthworms","Land-use change","NOT (gradient)","Surface density",NA
+"137","s_46","Earthworms","Land-use change","ORG (gradient)","Surface density",NA
+"138","s_46","Earthworms","Land-use change","OLD (gradient)","Surface density",NA
+"139","s_46","Earthworms","Land-use change","CF (gradient)","Surface density",NA
+"140","s_46","Earthworms","Land-use change","DF (gradient)","Surface density",NA
+"141","s_46","Earthworms","Land-use change","NOT (gradient)","Biomass",NA
+"142","s_46","Earthworms","Land-use change","ORG (gradient)","Biomass",NA
+"143","s_46","Earthworms","Land-use change","OLD (gradient)","Biomass",NA
+"144","s_46","Earthworms","Land-use change","CF (gradient)","Biomass",NA
+"145","s_46","Earthworms","Land-use change","DF (gradient)","Biomass",NA
+"146","s_46","Earthworms","Land-use change","Gradient","Biomass","Litter"
+"147","s_46","Earthworms","Land-use change","Gradient","Biomass","0 - 10 cm"
+"148","s_46","Earthworms","Land-use change","Gradient","Biomass","10 - 25 cm"
+"149","s_46","Earthworms","Land-use change","Gradient","Biomass","> 25 cm"
+"150","s_46","Earthworms","Land-use change","NOT (gradient)","Species/depth",NA
+"151","s_46","Earthworms","Land-use change","ORG (gradient)","Species/depth",NA
+"152","s_46","Earthworms","Land-use change","OLD (gradient)","Species/depth",NA
+"153","s_46","Earthworms","Land-use change","CF (gradient)","Species/depth",NA
+"154","s_46","Earthworms","Land-use change","DF (gradient)","Species/depth",NA
+"155","s_46","Earthworms","Land-use change","NOT (gradient)","Specific richness",NA
+"156","s_46","Earthworms","Land-use change","ORG (gradient)","Specific richness",NA
+"157","s_46","Earthworms","Land-use change","OLD (gradient)","Specific richness",NA
+"158","s_46","Earthworms","Land-use change","CF (gradient)","Specific richness",NA
+"159","s_46","Earthworms","Land-use change","DF (gradient)","Specific richness",NA
+"160","s_46","Earthworms","Land-use change","NOT (gradient)","Proportion of individuals",NA
+"161","s_46","Earthworms","Land-use change","ORG (gradient)","Proportion of individuals",NA
+"162","s_46","Earthworms","Land-use change","OLD (gradient)","Proportion of individuals",NA
+"163","s_46","Earthworms","Land-use change","CF (gradient)","Proportion of individuals",NA
+"164","s_46","Earthworms","Land-use change","DF (gradient)","Proportion of individuals",NA
+"165","s_52","Spiders","Landscape complexity","20 m (cereal field)","Number of individuals",NA
+"166","s_52","Beetles","Landscape complexity","20 m (cereal field)","Number of individuals",NA
+"167","s_52","Other insects","Landscape complexity","20 m (cereal field)","Number of individuals",NA
+"168","s_52","Spiders","Landscape complexity","20 m (cereal field)","Proportion of individuals",NA
+"169","s_52","Beetles","Landscape complexity","20 m (cereal field)","Proportion of individuals",NA
+"170","s_52","Other insects","Landscape complexity","20 m (cereal field)","Proportion of individuals",NA
+"171","s_52","Spiders","Landscape complexity","20 m (cereal field)","Cumulative dominance",NA
+"172","s_52","Beetles","Landscape complexity","20 m (cereal field)","Cumulative dominance",NA
+"173","s_52","Other insects","Landscape complexity","20 m (cereal field)","Cumulative dominance",NA
+"174","s_58","Beetles","Combined practices","No treatments nor tillage (grassland)","CWM",NA
+"175","s_58","Beetles","Combined practices","No treatments nor tillage (grassland)","CWM","Carnivory"
+"176","s_61","Other insects","Agroforestry","Crop alleys","Surface density",NA
+"177","s_61","Collembola","Agroforestry","Crop alleys","Surface density",NA
+"178","s_61","Woodlice","Agroforestry","Crop alleys","Surface density",NA
+"179","s_61","Acari","Agroforestry","Crop alleys","Surface density",NA
+"180","s_61","Spiders","Agroforestry","Crop alleys","Surface density",NA
+"181","s_61","Other arachnids","Agroforestry","Crop alleys","Surface density",NA
+"182","s_61","Beetles","Agroforestry","Crop alleys","Surface density",NA
+"183","s_61","Millipedes","Agroforestry","Crop alleys","Surface density",NA
+"184","s_61","Ants","Agroforestry","Crop alleys","Surface density",NA
+"185","s_61","Mollusks","Agroforestry","Crop alleys","Surface density",NA
+"186","s_61","Beetles","Agroforestry","Crop alleys","CWM",NA
+"187","s_61","Beetles","Agroforestry","Crop alleys","Functional Diversity variance (FDvar)",NA
+"188","s_72","Beetles","Organic agriculture","Conventional WW","CWM",NA
+"189","s_72","Beetles","Organic agriculture","Conventional FF","CWM",NA
+"190","s_85","Beetles","Organic agriculture","Conventional","Number of individuals",NA
+"191","s_85","Beetles","Organic agriculture","Conventional","Specific richness",NA
+"192","s_85","Beetles","Organic agriculture","Conventional","Shannon diversity index",NA
+"193","s_85","Beetles","Organic agriculture","Conventional","Berger-Parker",NA
+"194","s_85","Beetles","Organic agriculture","Conventional","Rao Stirling index",NA
+"195","s_85","Spiders","Organic agriculture","Conventional","Number of individuals",NA
+"196","s_85","Spiders","Organic agriculture","Conventional","Specific richness",NA
+"197","s_85","Spiders","Organic agriculture","Conventional","Shannon diversity index",NA
+"198","s_85","Spiders","Organic agriculture","Conventional","Berger-Parker",NA
+"199","s_85","Spiders","Organic agriculture","Conventional","Rao Stirling index",NA
+"200","s_85","Beetles","Organic agriculture","Conventional","Principal Component Analysis",NA
+"201","s_85","Spiders","Organic agriculture","Conventional","Principal Component Analysis",NA
+"202","s_77","Beetles","Organic agriculture","Flowering fields","Specific richness",NA
+"203","s_77","Spiders","Organic agriculture","Flowering fields","Specific richness",NA
+"204","s_77","Beetles","Organic agriculture","Flowering fields","CWM",NA
+"205","s_77","Spiders","Organic agriculture","Flowering fields","CWM",NA
+"206","s_77","Spiders","Landscape complexity","No arable crops","CWM",NA
+"207","s_87","Earthworms","Fertilisers and amendments","C - F","Taxonomic richness",NA
+"208","s_87","Earthworms","Fertilisers and amendments","C - F","Surface density",NA
+"209","s_87","Earthworms","Fertilisers and amendments","C - F","Biomass",NA
+"210","s_87","Earthworms","Fertilisers and amendments","R − F","Taxonomic richness",NA
+"211","s_87","Earthworms","Fertilisers and amendments","R − F","Surface density",NA
+"212","s_87","Earthworms","Fertilisers and amendments","R − F","Biomass",NA
+"213","s_87","Earthworms","Fertilisers and amendments","FYM − F","Taxonomic richness",NA
+"214","s_87","Earthworms","Fertilisers and amendments","FYM − F","Surface density",NA
+"215","s_87","Earthworms","Fertilisers and amendments","FYM − F","Biomass",NA
+"216","s_87","Earthworms","Fertilisers and amendments","C + F","Taxonomic richness",NA
+"217","s_87","Earthworms","Fertilisers and amendments","C + F","Surface density",NA
+"218","s_87","Earthworms","Fertilisers and amendments","C + F","Biomass",NA
+"219","s_87","Termites","Fertilisers and amendments","C - F","Taxonomic richness",NA
+"220","s_87","Termites","Fertilisers and amendments","C - F","Surface density",NA
+"221","s_87","Termites","Fertilisers and amendments","C - F","Biomass",NA
+"222","s_87","Termites","Fertilisers and amendments","R − F","Taxonomic richness",NA
+"223","s_87","Termites","Fertilisers and amendments","R − F","Surface density",NA
+"224","s_87","Termites","Fertilisers and amendments","R − F","Biomass",NA
+"225","s_87","Termites","Fertilisers and amendments","FYM − F","Taxonomic richness",NA
+"226","s_87","Termites","Fertilisers and amendments","FYM − F","Surface density",NA
+"227","s_87","Termites","Fertilisers and amendments","FYM − F","Biomass",NA
+"228","s_87","Termites","Fertilisers and amendments","C + F","Taxonomic richness",NA
+"229","s_87","Termites","Fertilisers and amendments","C + F","Surface density",NA
+"230","s_87","Termites","Fertilisers and amendments","C + F","Biomass",NA
+"231","s_2","Macroinvertebrates","Water management","Unpolluted","Taxonomic richness",NA
+"232","s_2","Macroinvertebrates","Water management","Unpolluted","Surface density",NA
+"233","s_2","Macroinvertebrates","Water management","Unpolluted","Activity",NA
+"234","s_2","Macroinvertebrates","Water management","Unpolluted","Proportion of individuals","Geophage"
+"235","s_2","Macroinvertebrates","Water management","Unpolluted","Proportion of individuals","Soft body"
+"236","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Specific richness",""
+"237","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Surface density",""
+"238","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Functional group richness",""
+"239","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Functional dispersion",""
+"240","s_3","Macroinvertebrates",NA,"Unmanaged tropical rainforest (primary degraded forest)","NMDS",""
+"241","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Functional redundancy",""
+"242","s_3","Macroinvertebrates","Agroforestry","Unmanaged tropical rainforest (primary degraded forest)","Response diversity",""
+"243","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Specific richness",""
+"244","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Surface density",""
+"245","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Functional group richness",""
+"246","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Functional dispersion",""
+"247","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Functional redundancy",""
+"248","s_3","Macroinvertebrates","Land-use change","Unmanaged tropical rainforest (primary degraded forest)","Response diversity",""
+"249","s_4_site_1","Earthworms","Tillage management","No tillage","Specific richness",""
+"250","s_4_site_1","Earthworms","Tillage management","No tillage","Shannon diversity index",""
+"251","s_4_site_1","Earthworms","Tillage management","No tillage","Pielou’s evenness index",""
+"252","s_4_site_1","Earthworms","Tillage management","No tillage","Functional richness (FRic)",""
+"253","s_4_site_1","Earthworms","Tillage management","No tillage","Functional evenness (FEve)",""
+"254","s_4_site_1","Earthworms","Tillage management","No tillage","Functional divergence (FDiv)",""
+"255","s_4_site_2","Earthworms","Tillage management","No tillage","Specific richness",""
+"256","s_4_site_2","Earthworms","Tillage management","No tillage","Shannon diversity index",""
+"257","s_4_site_2","Earthworms","Tillage management","No tillage","Pielou’s evenness index",""
+"258","s_4_site_2","Earthworms","Tillage management","No tillage","Functional richness (FRic)",""
+"259","s_4_site_2","Earthworms","Tillage management","No tillage","Functional evenness (FEve)",""
+"260","s_4_site_2","Earthworms","Tillage management","No tillage","Functional divergence (FDiv)",""
+"261","s_4_site_3","Earthworms","Tillage management","No tillage","Specific richness",""
+"262","s_4_site_3","Earthworms","Tillage management","No tillage","Shannon diversity index",""
+"263","s_4_site_3","Earthworms","Tillage management","No tillage","Pielou’s evenness index",""
+"264","s_4_site_3","Earthworms","Tillage management","No tillage","Functional richness (FRic)",""
+"265","s_4_site_3","Earthworms","Tillage management","No tillage","Functional evenness (FEve)",""
+"266","s_4_site_3","Earthworms","Tillage management","No tillage","Functional divergence (FDiv)",""
+"267","s_126","Beetles","Land-use change","Conventional","Body length",""
+"268","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Class 1 (partially developed wings, or no functional flight musculature)"
+"269","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Class 2 (less than 10% of individuals with functional wings or flight musculature)"
+"270","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Class 3 (species for which flight records have been reported)"
+"271","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Class 4 (functional flight musculature)"
+"272","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Carnivorous"
+"273","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Omnivorous"
+"274","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Phytophageous"
+"275","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Breeding in spring"
+"276","s_126","Beetles","Land-use change","Conventional","Proportion of individuals","Breeding in automn"
+"277","s_126","Beetles","Land-use change","Conventional","CWM",""
+"278","s_126","Beetles","Land-use change","Conventional","Rao's quadratic diversity",""
+"279","s_126","Beetles","Land-use change","Conventional","Specific richness",""
+"280","s_126","Beetles","Land-use change","Conventional","RDA",""
+"281","s_126","Beetles","Land-use change","Conventional","Partial redundancy analysis",""
+"282","s_99","Termites","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"283","s_99","Termites","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"284","s_99","Termites","Land-use change","Secondary forest (F) wet season","Surface density",""
+"285","s_99","Ants","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"286","s_99","Ants","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"287","s_99","Ants","Land-use change","Secondary forest (F) wet season","Surface density",""
+"288","s_99","Earthworms","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"289","s_99","Earthworms","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"290","s_99","Earthworms","Land-use change","Secondary forest (F) wet season","Surface density",""
+"291","s_99","Beetles","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"292","s_99","Beetles","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"293","s_99","Beetles","Land-use change","Secondary forest (F) wet season","Surface density",""
+"294","s_99","Millipedes","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"295","s_99","Millipedes","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"296","s_99","Millipedes","Land-use change","Secondary forest (F) wet season","Surface density",""
+"297","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) wet season","Proportion of total density",""
+"298","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) dry season","Proportion of total density",""
+"299","s_99","Macroinvertebrates","Land-use change","Secondary forest (F) wet season","Proportion of total density",""
+"300","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) wet season","Proportion of total biomass",""
+"301","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) dry season","Proportion of total biomass",""
+"302","s_99","Macroinvertebrates","Land-use change","Secondary forest (F) wet season","Proportion of total biomass",""
+"303","s_99","Macroinvertebrates",NA,"Secondary forest (F) wet season","NMDS",""
+"304","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"305","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"306","s_99","Macroinvertebrates","Land-use change","Secondary forest (F) wet season","Surface density",""
+"307","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) wet season","Biomass",""
+"308","s_99","Macroinvertebrates","Agroforestry","Secondary forest (F) dry season","Biomass",""
+"309","s_99","Macroinvertebrates","Land-use change","Secondary forest (F) wet season","Biomass",""
+"310","s_99","Spiders","Agroforestry","Secondary forest (F) wet season","Surface density",""
+"311","s_99","Spiders","Agroforestry","Secondary forest (F) dry season","Surface density",""
+"312","s_99","Spiders","Land-use change","Secondary forest (F) wet season","Surface density",""
+"313","s_122","Collembola","Land-use change","Forest","Surface density",NA
+"314","s_122","Collembola","Land-use change","Forest","Specific richness",NA
+"315","s_122","Collembola","Land-use change","Forest","Shannon diversity index",NA
+"316","s_122","Collembola","Land-use change","Forest","Pielou’s evenness index",NA
+"317","s_122","Collembola","Land-use change","Forest","CCA",NA
+"318","s_122","Collembola","Land-use change","Forest","CWM","Detritus"
+"319","s_122","Collembola","Land-use change","Forest","CWM","Feces"
+"320","s_122","Collembola","Land-use change","Forest","CWM","Herb"
+"321","s_122","Collembola","Land-use change","Forest","CWM","Litter"
+"322","s_122","Collembola","Land-use change","Forest","CWM","Mineral surfaces"
+"323","s_122","Collembola","Land-use change","Forest","CWM","Moss"
+"324","s_122","Collembola","Land-use change","Forest","CWM","Mushrooms"
+"325","s_122","Collembola","Land-use change","Forest","CWM","Nest of invertebrates"
+"326","s_122","Collembola","Land-use change","Forest","CWM","Nest of vertebrates"
+"327","s_122","Collembola","Land-use change","Forest","CWM","Rock"
+"328","s_122","Collembola","Land-use change","Forest","CWM","Root"
+"329","s_122","Collembola","Land-use change","Forest","CWM","Soil"
+"330","s_122","Collembola","Land-use change","Forest","CWM","Tree"
+"331","s_122","Collembola","Land-use change","Forest","CWM","Trunk"
+"332","s_122","Collembola","Land-use change","Forest","CWM","<0.35 mm"
+"333","s_122","Collembola","Land-use change","Forest","CWM","0.35-1 mm"
+"334","s_122","Collembola","Land-use change","Forest","CWM","1-2 mm"
+"335","s_122","Collembola","Land-use change","Forest","CWM","2-4 mm"
+"336","s_122","Collembola","Land-use change","Forest","CWM","4-7.5 mm"
+"337","s_122","Collembola","Land-use change","Forest","CWM","Cylindrical"
+"338","s_122","Collembola","Land-use change","Forest","CWM","Spherical"
+"339","s_122","Collembola","Land-use change","Forest","CWM","Jumping"
+"340","s_122","Collembola","Land-use change","Forest","CWM","No jumping"
+"341","s_122","Collembola","Land-use change","Forest","CWM","Chewing"
+"342","s_122","Collembola","Land-use change","Forest","CWM","Predator"
+"343","s_122","Collembola","Land-use change","Forest","CWM","Sucking"
+"344","s_122","Collembola","Land-use change","Forest","CWM","With pigmentation"
+"345","s_122","Collembola","Land-use change","Forest","CWM","Without pigmentation"
+"346","s_122","Collembola","Land-use change","Forest","CWM","Sexual"
+"347","s_122","Collembola","Land-use change","Forest","CWM","Asexual"
+"348","s_125","Macroinvertebrates","Conservation agriculture","soybean–maize under conventional tillage (CT) crop rotation of maize (Zea mays L.) and soybean (Glycine max L.) using conventional tillage without restitution of residue (referred as to CT)","Surface density",NA
+"349","s_125","Macroinvertebrates","Conservation agriculture","natural fallow (NF) “natural” reference system","Surface density",NA
+"350","s_125","Macroinvertebrates","Conservation agriculture","soybean–maize under conventional tillage (CT) crop rotation of maize (Zea mays L.) and soybean (Glycine max L.) using conventional tillage without restitution of residue (referred as to CT)","Biomass",NA
+"351","s_125","Macroinvertebrates","Conservation agriculture","natural fallow (NF) “natural” reference system","Biomass",NA
+"352","s_130","Earthworms","Tillage management","Direct sowing: without any soil tillage","Surface density",NA
+"353","s_130","Earthworms","Tillage management","Direct sowing: without any soil tillage","Biomass",NA
+"354","s_130","Earthworms",NA,NA,"RDA",NA
+"355","s_131","Other insects","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Surface density",NA
+"356","s_131","Beetles","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Surface density",NA
+"357","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Trap density",NA
+"358","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Surface density",NA
+"359","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Body length",NA
+"360","s_131","Beetles","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Body length",NA
+"361","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Specific richness",NA
+"362","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Number of individuals",NA
+"363","s_131","Beetles","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Specific richness",NA
+"364","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Proportion of species","Eurytopic"
+"365","s_131","Spiders","Combined practices","no input of pesticides and fertilizers, three-course sugar beet rotation (sugar beet, winter wheat, winter barley, yellow mustard (catch crop))","Jaccard-similarity index in comparison to I0 (the comparator)",NA
+"366","s_131","Other insects","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Surface density",NA
+"367","s_131","Beetles","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Surface density",NA
+"368","s_131","Other insects","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Trap density",NA
+"369","s_131","Beetles","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Trap density",NA
+"370","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Trap density",NA
+"371","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Proportion of species","Pioneer"
+"372","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Proportion of individuals",NA
+"373","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Body length",NA
+"374","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Specific richness",NA
+"375","s_131","Spiders","Combined practices","Fallow: Long term set-aside with natural succession for 6 years without any operations.","Number of individuals",NA
+"376","s_132_site_1","Earthworms","Crop diversification","NC-natural colonization (plots that were naturally colonized by species present in the seed bank)","Biomass",NA
+"377","s_132_site_2","Earthworms","Crop diversification","NC-natural colonization (plots that were naturally colonized by species present in the seed bank)","Biomass",NA
+"378","s_132_site_3","Earthworms","Crop diversification","NC-natural colonization (plots that were naturally colonized by species present in the seed bank)","Biomass",NA
+"379","s_132_site_4","Earthworms","Crop diversification","NC-natural colonization (plots that were naturally colonized by species present in the seed bank)","Biomass",NA
+"380","s_141","Termites","Crop diversification","S1–1 - continuous sorghum","Surface density",NA
+"381","s_141","Termites","Crop diversification","S1–1 - continuous sorghum","Biomass",NA
+"382","s_141","Earthworms","Crop diversification","S1–1 - continuous sorghum","Surface density",NA
+"383","s_141","Earthworms","Crop diversification","S1–1 - continuous sorghum","Biomass",NA
+"384","s_141","Termites","Fertilisers and amendments","S2-1 - Control + N","Surface density",NA
+"385","s_141","Termites","Fertilisers and amendments","S2-2 - Control − N","Surface density",NA
+"386","s_141","Termites","Fertilisers and amendments","S2-1 - Control + N","Biomass",NA
+"387","s_141","Termites","Fertilisers and amendments","S2-2 - Control − N","Biomass",NA
+"388","s_141","Earthworms","Fertilisers and amendments","S2-1 - Control + N","Surface density",NA
+"389","s_141","Earthworms","Fertilisers and amendments","S2-2 - Control − N","Surface density",NA
+"390","s_141","Earthworms","Fertilisers and amendments","S2-1 - Control + N","Biomass",NA
+"391","s_141","Earthworms","Fertilisers and amendments","S2-2 - Control − N","Biomass",NA
+"392","s_141","Termites","Fertilisers and amendments","No manure","Surface density",NA
+"393","s_141","Termites","Fertilisers and amendments","No manure","Biomass",NA
+"394","s_141","Termites","Fertilisers and amendments","Straw removed","Surface density",NA
+"395","s_141","Termites","Fertilisers and amendments","Straw removed","Biomass",NA
+"396","s_141","Termites","Fertilisers and amendments","No nitrogen","Surface density",NA
+"397","s_141","Termites","Fertilisers and amendments","No nitrogen","Biomass",NA
+"398","s_141","Earthworms","Fertilisers and amendments","No manure","Surface density",NA
+"399","s_141","Earthworms","Fertilisers and amendments","No manure","Biomass",NA
+"400","s_141","Earthworms","Fertilisers and amendments","Straw removed","Surface density",NA
+"401","s_141","Earthworms","Fertilisers and amendments","Straw removed","Biomass",NA
+"402","s_141","Earthworms","Fertilisers and amendments","No nitrogen","Surface density",NA
+"403","s_141","Earthworms","Fertilisers and amendments","No nitrogen","Biomass",NA
+"404","s_141","Termites","Tillage management","S3-1 - Animal plow","Surface density",NA
+"405","s_141","Termites","Tillage management","S3-1 - Animal plow","Biomass",NA
+"406","s_141","Earthworms","Tillage management","S3-1 - Animal plow","Surface density",NA
+"407","s_141","Earthworms","Tillage management","S3-1 - Animal plow","Biomass",NA
+"408","s_142","Termites","Agroforestry","Spontaneous fallow","Surface density",NA
+"409","s_142","Mollusks","Agroforestry","Spontaneous fallow","Surface density",NA
+"410","s_142","Earthworms","Agroforestry","Spontaneous fallow","Surface density",NA
+"411","s_142","Woodlice","Agroforestry","Spontaneous fallow","Surface density",NA
+"412","s_142","Spiders","Agroforestry","Spontaneous fallow","Surface density",NA
+"413","s_142","Millipedes","Agroforestry","Spontaneous fallow","Surface density",NA
+"414","s_142","Other insects","Agroforestry","Spontaneous fallow","Surface density",NA
+"415","s_142","Beetles","Agroforestry","Spontaneous fallow","Surface density",NA
+"416","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Surface density",NA
+"417","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Taxonomic richness",NA
+"418","s_142","Mollusks","Agroforestry","Spontaneous fallow","Biomass",NA
+"419","s_142","Earthworms","Agroforestry","Spontaneous fallow","Biomass",NA
+"420","s_142","Woodlice","Agroforestry","Spontaneous fallow","Biomass",NA
+"421","s_142","Spiders","Agroforestry","Spontaneous fallow","Biomass",NA
+"422","s_142","Millipedes","Agroforestry","Spontaneous fallow","Biomass",NA
+"423","s_142","Other insects","Agroforestry","Spontaneous fallow","Biomass",NA
+"424","s_142","Beetles","Agroforestry","Spontaneous fallow","Biomass",NA
+"425","s_142","Termites","Agroforestry","Spontaneous fallow","Biomass",NA
+"426","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Biomass",NA
+"427","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Proportion of individuals","Litter"
+"428","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Proportion of individuals","0-5 cm"
+"429","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Proportion of individuals","5-10 cm"
+"430","s_142","Macroinvertebrates","Agroforestry","Spontaneous fallow","Proportion of individuals","10-25 cm"
+"431","s_142","Macroinvertebrates","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Surface density",NA
+"432","s_142","Macroinvertebrates","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Biomass",NA
+"433","s_142","Macroinvertebrates","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Taxonomic richness",NA
+"434","s_142","Millipedes","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Surface density",NA
+"435","s_142","Millipedes","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Biomass",NA
+"436","s_142","Woodlice","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Surface density",NA
+"437","s_142","Woodlice","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Biomass",NA
+"438","s_142","Earthworms","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Surface density",NA
+"439","s_142","Earthworms","Agroforestry","Agrosilvopastoral system: Low-input sil vopastoral system (ASPl)","Biomass",NA
+"440","s_147","Earthworms","Landscape complexity","Garden meadow","Biomass",NA
+"441","s_147","Earthworms","Landscape complexity","Garden meadow","Surface density",NA
+"442","s_147","Collembola","Tillage management","Mulched plots","Proportion of individuals",NA
+"443","s_147","Acari","Tillage management","Mulched plots","Proportion of individuals",NA
+"444","s_147","Other insects","Tillage management","Mulched plots","Proportion of individuals",NA
+"445","s_147","Spiders","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"446","s_147","Spiders","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"447","s_147","Beetles","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"448","s_147","Beetles","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"449","s_147","Ants","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"450","s_147","Ants","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"451","s_147","Other insects","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"452","s_147","Other insects","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"453","s_147","Millipedes","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"454","s_147","Millipedes","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"455","s_147","Woodlice","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"456","s_147","Woodlice","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"457","s_147","Other arachnids","Organic agriculture","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"458","s_147","Other arachnids","Combined practices","Conventionnaly farmed orchard (with pesticide inputs)","Specific richness",NA
+"459","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","Number of individuals",NA
+"460","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","Trap density",NA
+"461","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","Specific richness",NA
+"462","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","Shannon diversity index",NA
+"463","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","Pielou’s evenness index",NA
+"464","s_155","Spiders","Pest and disease management",NA,"NMDS",NA
+"465","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Aeronaut species"
+"466","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Walking preys"
+"467","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Jumping preys"
+"468","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Flying preys"
+"469","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Maternal care"
+"470","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Overwintering as adults"
+"471","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Overwintering as juveniles"
+"472","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","Overwintering as cocoons"
+"473","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","0-5 mm"
+"474","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","5-10 mm"
+"475","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","10-15 mm"
+"476","s_155","Spiders","Pest and disease management","Abandoned (reference without any human perturbation (no pesticides, no traffic, no tree pruning, no irrigation, no fertilisers))","CWM","15-20 mm"
+"477","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1966","Surface density",NA
+"478","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1967","Surface density",NA
+"479","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1968","Surface density",NA
+"480","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1969","Body mass",NA
+"481","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1970","Body mass",NA
+"482","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1971","Body mass",NA
+"483","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1972","Biomass",NA
+"484","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1973","Biomass",NA
+"485","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1974","Biomass",NA
+"486","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1975","Specific mass density",NA
+"487","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1976","Specific mass density",NA
+"488","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1977","Specific mass density",NA
+"489","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1978","Surface density",NA
+"490","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1979","Surface density",NA
+"491","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1980","Surface density",NA
+"492","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1981","Surface density",NA
+"493","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1982","Surface density",NA
+"494","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1983","Surface density",NA
+"495","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1984","Surface density",NA
+"496","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1985","Surface density",NA
+"497","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1986","Surface density",NA
+"498","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1987","Surface density",NA
+"499","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1988","Surface density",NA
+"500","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1989","Surface density",NA
+"501","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1990","Surface density",NA
+"502","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1991","Surface density",NA
+"503","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1992","Surface density",NA
+"504","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1993","Surface density",NA
+"505","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1994","Surface density",NA
+"506","s_163","Earthworms","Crop diversification","PA: Permanent arable cropping since 1995","Surface density",NA
+"507","s_184","Acari","Landscape complexity","Winter wheat","Log of biomass",NA
+"508","s_184","Acari","Landscape complexity","Oak-birch forest","Log of biomass",NA
+"509","s_184","Acari","Landscape complexity","Grassland","Log of biomass",NA
+"510","s_184","Acari","Landscape complexity","Poplar forest","Log of biomass",NA
+"511","s_184","Collembola","Landscape complexity","Winter wheat","Log of biomass",NA
+"512","s_184","Collembola","Landscape complexity","Oak-birch forest","Log of biomass",NA
+"513","s_184","Collembola","Landscape complexity","Grassland","Log of biomass",NA
+"514","s_184","Collembola","Landscape complexity","Poplar forest","Log of biomass",NA
+"515","s_204","Earthworms","Residues management","Cover Crop","Biomass",NA
+"516","s_204","Earthworms","Residues management","Fallow","Biomass",NA
+"517","s_204","Earthworms","Crop diversification","Fallow","Biomass",NA
+"518","s_172","Invertebrates","Landscape complexity","imp. CP10","Biomass",NA
+"519","s_172","Invertebrates","Landscape complexity","CP2","Biomass",NA
+"520","s_172","Invertebrates","Landscape complexity","CP25","Biomass",NA
+"521","s_172","Invertebrates","Landscape complexity","Wheat","Biomass",NA
+"522","s_172","Other insects","Landscape complexity","imp. CP10","Least square mean for the number of",NA
+"523","s_172","Other insects","Landscape complexity","CP2","Least square mean for the number of",NA
+"524","s_172","Other insects","Landscape complexity","CP25","Least square mean for the number of",NA
+"525","s_172","Other insects","Landscape complexity","Wheat","Least square mean for the number of",NA
+"526","s_172","Beetles","Landscape complexity","imp. CP10","Least square mean for the number of",NA
+"527","s_172","Beetles","Landscape complexity","CP2","Least square mean for the number of",NA
+"528","s_172","Beetles","Landscape complexity","CP25","Least square mean for the number of",NA
+"529","s_172","Beetles","Landscape complexity","Wheat","Least square mean for the number of",NA
+"530","s_172","Ants","Landscape complexity","imp. CP10","Least square mean for the number of",NA
+"531","s_172","Ants","Landscape complexity","CP2","Least square mean for the number of",NA
+"532","s_172","Ants","Landscape complexity","CP25","Least square mean for the number of",NA
+"533","s_172","Ants","Landscape complexity","Wheat","Least square mean for the number of",NA
+"534","s_172","Spiders","Landscape complexity","imp. CP10","Least square mean for the number of",NA
+"535","s_172","Spiders","Landscape complexity","CP2","Least square mean for the number of",NA
+"536","s_172","Spiders","Landscape complexity","CP25","Least square mean for the number of",NA
+"537","s_172","Spiders","Landscape complexity","Wheat","Least square mean for the number of",NA
+"538","s_193","Tardigrada","Organic agriculture","Conventional agriculture (regular inputs of fertilizer nitrogen)","Surface density",NA
+"539","s_193","Acari","Organic agriculture","Conventional agriculture (regular inputs of fertilizer nitrogen)","Surface density",NA
+"540","s_193","Earthworms","Organic agriculture","Conventional agriculture (regular inputs of fertilizer nitrogen)","Surface density",NA
+"541","s_193","Earthworms","Organic agriculture","Conventional agriculture (regular inputs of fertilizer nitrogen)","Biomass",NA
+"542","s_168","Earthworms","Agroforestry","Control (treeless)","Biomass",NA
+"543","s_168","Earthworms","Agroforestry","Alley","Biomass",NA
+"544","s_168","Earthworms","Agroforestry","Control (treeless)","Surface density",NA
+"545","s_168","Earthworms","Agroforestry","Alley","Surface density",NA
+"546","s_168","Earthworms","Agroforestry","Control (treeless)","Number of individuals",NA
+"547","s_168","Earthworms","Agroforestry","Alley","Number of individuals",NA
+"548","s_167","Spiders","Landscape complexity","Simplificated landscape","Activity-density",NA
+"549","s_167","Spiders","Landscape complexity","Simplificated landscape","Specific richness",NA
+"550","s_167","Spiders","Landscape complexity","Simplificated landscape","Pielou’s evenness index",NA
+"551","s_167","Spiders","Landscape complexity","Simplificated landscape","Functional richness (Fric)",NA
+"552","s_167","Spiders","Landscape complexity","Simplificated landscape","Functional evenness (Feve)",NA
+"553","s_167","Spiders","Landscape complexity","Simplificated landscape","Functional divergence (FDiv)",NA
+"554","s_167","Spiders","Landscape complexity","Simplificated landscape","Functional dispersion (FDis)",NA
+"555","s_167","Spiders","Landscape complexity","Simplificated landscape","Functional redundancy",NA
+"556","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Folliage runners"
+"557","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Ground runners"
+"558","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Wand sheet"
+"559","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Ambushers"
+"560","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Space Web"
+"561","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Orb weaver"
+"562","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Forest"
+"563","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Moor"
+"564","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Meadow"
+"565","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Arable"
+"566","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Ruderal"
+"567","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Shrub"
+"568","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Under stone"
+"569","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Soil surface"
+"570","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Herb layer"
+"571","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Shrub layer"
+"572","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Tree trunk"
+"573","s_167","Spiders","Landscape complexity","Simplificated landscape","Number of individuals","Tree canopy"
+"574","s_167","Spiders","Landscape complexity","Simplificated landscape","Body size",NA
+"575","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Activity-density",NA
+"576","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Specific richness",NA
+"577","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Pielou’s evenness index",NA
+"578","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Functional richness (Fric)",NA
+"579","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Functional evenness (Feve)",NA
+"580","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Functional divergence (FDiv)",NA
+"581","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Functional dispersion (FDis)",NA
+"582","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Functional redundancy",NA
+"583","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Folliage runners"
+"584","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Ground runners"
+"585","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Wand sheet"
+"586","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Ambushers"
+"587","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Space Web"
+"588","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Orb weaver"
+"589","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Forest"
+"590","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Moor"
+"591","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Meadow"
+"592","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Arable"
+"593","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Ruderal"
+"594","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Shrub"
+"595","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Under stone"
+"596","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Soil surface"
+"597","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Herb layer"
+"598","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Shrub layer"
+"599","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Tree trunk"
+"600","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Tree canopy"
+"601","s_167","Spiders","Crop diversification","Low proportion of ley in the landscape","Body size",NA
+"602","s_167","Spiders","Organic agriculture","Conventional agriculture","Activity-density",NA
+"603","s_167","Spiders","Organic agriculture","Conventional agriculture","Specific richness",NA
+"604","s_167","Spiders","Organic agriculture","Conventional agriculture","Pielou’s evenness index",NA
+"605","s_167","Spiders","Organic agriculture","Conventional agriculture","Functional richness (Fric)",NA
+"606","s_167","Spiders","Organic agriculture","Conventional agriculture","Functional evenness (Feve)",NA
+"607","s_167","Spiders","Organic agriculture","Conventional agriculture","Functional divergence (FDiv)",NA
+"608","s_167","Spiders","Organic agriculture","Conventional agriculture","Functional dispersion (FDis)",NA
+"609","s_167","Spiders","Organic agriculture","Conventional agriculture","Functional redundancy",NA
+"610","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Folliage runners"
+"611","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Ground runners"
+"612","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Wand sheet"
+"613","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Ambushers"
+"614","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Space Web"
+"615","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Orb weaver"
+"616","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Forest"
+"617","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Moor"
+"618","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Meadow"
+"619","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Arable"
+"620","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Ruderal"
+"621","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Shrub"
+"622","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Under stone"
+"623","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Soil surface"
+"624","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Herb layer"
+"625","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Shrub layer"
+"626","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Tree trunk"
+"627","s_167","Spiders","Organic agriculture","Conventional agriculture","Number of individuals","Tree canopy"
+"628","s_167","Spiders","Organic agriculture","Conventional agriculture","Body size",NA
+"629","s_167","Beetles","Landscape complexity","Simplificated landscape","Activity-density",NA
+"630","s_167","Beetles","Landscape complexity","Simplificated landscape","Specific richness",NA
+"631","s_167","Beetles","Landscape complexity","Simplificated landscape","Pielou’s evenness index",NA
+"632","s_167","Beetles","Landscape complexity","Simplificated landscape","Functional richness (Fric)",NA
+"633","s_167","Beetles","Landscape complexity","Simplificated landscape","Functional evenness (Feve)",NA
+"634","s_167","Beetles","Landscape complexity","Simplificated landscape","Functional divergence (FDiv)",NA
+"635","s_167","Beetles","Landscape complexity","Simplificated landscape","Functional dispersion (FDis)",NA
+"636","s_167","Beetles","Landscape complexity","Simplificated landscape","Functional redundancy",NA
+"637","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Carnivorous"
+"638","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Phytophageous"
+"639","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Omnivorous"
+"640","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Autumn breeder"
+"641","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Spring breeder"
+"642","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Macropterous"
+"643","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Dimorphic"
+"644","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Brachypterous"
+"645","s_167","Beetles","Landscape complexity","Simplificated landscape","Body size",NA
+"646","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Activity-density",NA
+"647","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Specific richness",NA
+"648","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Pielou’s evenness index",NA
+"649","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Functional richness (Fric)",NA
+"650","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Functional evenness (Feve)",NA
+"651","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Functional divergence (FDiv)",NA
+"652","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Functional dispersion (FDis)",NA
+"653","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Functional redundancy",NA
+"654","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Carnivorous"
+"655","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Phytophageous"
+"656","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Omnivorous"
+"657","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Autumn breeder"
+"658","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Spring breeder"
+"659","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Macropterous"
+"660","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Dimorphic"
+"661","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Brachypterous"
+"662","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Body size",NA
+"663","s_167","Beetles","Organic agriculture","Conventional agriculture","Activity-density",NA
+"664","s_167","Beetles","Organic agriculture","Conventional agriculture","Specific richness",NA
+"665","s_167","Beetles","Organic agriculture","Conventional agriculture","Pielou’s evenness index",NA
+"666","s_167","Beetles","Organic agriculture","Conventional agriculture","Functional richness (Fric)",NA
+"667","s_167","Beetles","Organic agriculture","Conventional agriculture","Functional evenness (Feve)",NA
+"668","s_167","Beetles","Organic agriculture","Conventional agriculture","Functional divergence (FDiv)",NA
+"669","s_167","Beetles","Organic agriculture","Conventional agriculture","Functional dispersion (FDis)",NA
+"670","s_167","Beetles","Organic agriculture","Conventional agriculture","Functional redundancy",NA
+"671","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Carnivorous"
+"672","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Phytophageous"
+"673","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Omnivorous"
+"674","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Autumn breeder"
+"675","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Spring breeder"
+"676","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Macropterous"
+"677","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Dimorphic"
+"678","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Brachypterous"
+"679","s_167","Beetles","Organic agriculture","Conventional agriculture","Body size",NA
+"680","s_167","Beetles","Landscape complexity","Simplificated landscape","Number of individuals","Mycetophagous"
+"681","s_167","Beetles","Crop diversification","Low proportion of ley in the landscape","Number of individuals","Mycetophagous"
+"682","s_167","Beetles","Organic agriculture","Conventional agriculture","Number of individuals","Mycetophagous"
+"683","s_167",NA,"Crop diversification","Low proportion of ley in the landscape","Activity-density",NA
+"684","s_167",NA,"Crop diversification","Low proportion of ley in the landscape","Pielou’s evenness index",NA
+"685","s_167",NA,"Landscape complexity","Simplificated landscape","Pielou’s evenness index",NA
+"686","s_167","Macroinvertebrates",NA,NA,"NMDS",NA

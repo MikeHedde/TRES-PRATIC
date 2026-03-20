@@ -10,7 +10,7 @@ paper_db <- db %>%
   select(Article_ID, Publication_Year, Newspaper) %>%
   distinct()
 
-#Sous jeu de données synthétique au niveau des études
+#Sous jeu de données synthétique au niveau des sites
 paper_level_db <- db %>%
   select(Study_ID, Publication_Year, Latitude, Longitude, Newspaper, Study_country) %>%
   distinct() 
@@ -23,3 +23,12 @@ PI_db <- db %>%
   distinct()
 
 write.csv(x = PI_db, file = "data/derived-data/PI_db.csv")
+
+#Sous jeu de données au niveau des études comparatives
+CS_db <- db %>%
+  select(Study_ID, Comparative_study_code, Intervention_R2, Population_homogenized, Trait_group, Outcome_type_R1) %>%
+  filter(Outcome_type_R1 == "Functional")
+  
+write.csv(x = CS_db, file = "data/derived-data/CS_db.csv")
+
+nrow(CS_db)
