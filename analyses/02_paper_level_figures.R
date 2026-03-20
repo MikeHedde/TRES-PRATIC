@@ -27,7 +27,7 @@ fig_chloropeth <- ggplot(map_data) +
   scale_fill_gradient(
     low = "lightblue",
     high = "darkblue",
-    name = "Nombre\nd'études") +
+    name = "Nombre\nde sites\nd'étude") +
   theme_minimal() +
 
 geom_point(
