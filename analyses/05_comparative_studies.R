@@ -149,7 +149,7 @@ p_heat <- ggplot(
 ) +
   geom_tile(color = "white", linewidth = 0.45) +
   scale_fill_viridis_c(
-    name = "Nombre d'études\ncomparatives",
+    name = "Nombre\nd'études\ncomparatives",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(35, "mm"),
@@ -234,7 +234,7 @@ p_heat_leg <- p_heat +
     legend.box.margin = margin(0, 0, 0, 0)
   ) +
   scale_fill_viridis_c(
-    name = "Nombre d'études\ncomparatives",
+    name = "Nombre\nd'études\ncomparatives",
     option = "D",
     guide = guide_colorbar(
       barheight = unit(28, "mm"),
@@ -304,7 +304,7 @@ fig_intervention_counts <- ggplot(
   #) +
   labs(
     #title = "Distribution des interventions",
-    x = "Nombre d'études",
+    x = "Nombre d'études comparatives",
     y = NULL
   ) +
   theme_classic(base_size = 16) +
