@@ -1,7 +1,7 @@
 #############################################################
 # Figure C. Trait-group composition by intervention and fauna
 #############################################################
-PI_db <- read.csv("data/derived-data/PI_db.csv") 
+CS_db <- read.csv("data/derived-data/CS_db.csv") 
 
 ######################################################
 #Ordre
@@ -43,8 +43,8 @@ taxa_order <- c(
 
 #################################################################
 # Données pour la figure "camemberts dans la matrice"
-trait_pie_data <- PI_db %>%
-  distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
+trait_pie_data <- CS_db %>%
+  #distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
   count(Intervention_R2, Population_homogenized, Trait_group, name = "n")
 
 # Totaux par case (pour éventuellement contrôler la taille)
