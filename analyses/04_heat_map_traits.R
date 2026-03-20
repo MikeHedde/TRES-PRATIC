@@ -7,38 +7,36 @@ CS_db <- read.csv("data/derived-data/CS_db.csv")
 #Ordre
 ######################################################
 intervention_order <- c(
-  "Tillage management",
-  "Crop diversification",
-  "Organic agriculture",
   "Landscape complexity",
-  "Land-use change",
-  "Combined practices",
   "Agroforestry",
+  "Organic agriculture",
+  "Combined practices",
+  "Tillage management",
+  "Land-use change",
+  "Crop diversification",
+  "Pest and disease management",
+  "GMO",
   "Fertilisers and amendments",
   "Water management",
   "Residues management",
-  "Pest and disease management",
-  "GMO",
   "Conservation agriculture"
 )
 
 taxa_order <- c(
+  "Collembola",
   "Earthworms",
+  "Acari",
   "Beetles",
   "Spiders",
   "Macroinvertebrates",
-  "Collembola",
-  "Other insects",
-  "Microinvertebrates",
-  "Millipedes",
-  "Acari",
-  "Termites",
-  "Ants",
-  "Woodlice",
   "Invertebrates",
-  "Other arachnids",
-  "Mollusks",
-  "Tardigrada"
+  "Termites",
+  "Millipedes",
+  "Other insects",
+  "Ants",
+  "Microinvertebrates",
+  "Woodlice",
+  "Mollusks"
 )
 
 #################################################################
@@ -144,18 +142,18 @@ fig_heatmap_traits <- ggplot() +
   scale_x_continuous(
     breaks = seq_along(intervention_order),
     labels = c(
-      "Travail du sol",
-      "Diversification des cultures",
-      "Agriculture biologique",
       "Complexité du paysage",
-      "Reclassification des terres",
-      "Pratiques multiples",
       "Agroforesterie",
+      "Agriculture biologique",
+      "Pratiques multiples",
+      "Travail du sol",
+      "Reclassification des terres",
+      "Diversification des cultures",
+      "Gestion des ravageurs et maladies",
+      "OGM",
       "Fertilisation",
       "Gestion de l'eau",
       "Gestion des déchets",
-      "Gestion des ravageurs et maladies",
-      "OGM",
       "Agriculture de conservation"
     ),
     expand = expansion(add = 0.5)
@@ -164,22 +162,20 @@ fig_heatmap_traits <- ggplot() +
     breaks = seq_along(rev(taxa_order)),
     labels = rev(
       c(
+        "Collemboles",
         "Vers de terre",
+        "Acariens",
         "Carabidés",
         "Araignées",
         "Macroinvertébrés",
-        "Collemboles",
-        "Autres insectes",
-        "Microinvertébrés",
-        "Mille-pattes",
-        "Acariens",
-        "Termites",
-        "Fourmis",
-        "Cloportes",
         "Invertébrés",
-        "Autres arachnides",
-        "Mollusques",
-        "Tardigrades"
+        "Termites",
+        "Mille-pattes",
+        "Autres insectes",
+        "Fourmis",
+        "Microinvertébrés",
+        "Cloportes",
+        "Mollusques"
       )
     ),
     expand = expansion(add = 0.5)
