@@ -3,8 +3,8 @@
 # ============================================================
 
 # Libraries
-librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, scatterpie, 
-                 treemapify, cowplot, patchwork, scatterpie)
+librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, 
+                 treemapify, cowplot, patchwork, scatterpie, tidyr)
 
 # Run all scripts
 # Order matters !

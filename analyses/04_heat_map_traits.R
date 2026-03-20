@@ -3,6 +3,8 @@
 #############################################################
 CS_db <- read.csv("data/derived-data/CS_db.csv") 
 
+CS_db_clean <- CS_db %>%
+  separate_rows(Trait_group, sep = ",\\s*")
 ######################################################
 #Ordre
 ######################################################
@@ -41,7 +43,7 @@ taxa_order <- c(
 
 #################################################################
 # Données pour la figure "camemberts dans la matrice"
-trait_pie_data <- CS_db %>%
+trait_pie_data <- CS_db_clean %>%
   #distinct(Study_ID, Intervention_R2, Population_homogenized, Trait_group) %>%
   count(Intervention_R2, Population_homogenized, Trait_group, name = "n")
 
