@@ -1,8 +1,9 @@
-install.packages("metaDigitise")
-install.packages("devtools")
-devtools::install_github("daniel1noble/metaDigitise")
+###libraries####################################################################
+librarian::shelf(metaDigitise)
 
-library(metaDigitise)
+###Création du dossier##########################################################
+#dir.create("data/articles_corpus/Cardinael_2019")
 
-
+###Extraction des données quanti################################################
 data <- metaDigitise(dir = "data/articles_corpus/Cardinael_2019")
+
