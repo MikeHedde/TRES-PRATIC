@@ -37,7 +37,7 @@ length(unique(hyp1$Study_ID))
 nrow(hyp1)
 #hyp1 rassemble 40 études comparatives et 7 sites, on peut faire une méta-analyse multi-niveaux
 
-#Hypothèse 2 : travail du sol et traits corporels
+#Hypothèse 2 : travail du sol et taille corporelle
 hyp2 <- db %>%
   filter(Intervention_R2 %in% c("Tillage management",
                                 "Combined practices",
@@ -45,11 +45,11 @@ hyp2 <- db %>%
                                 "Residues management"),
          
          Outcome_indicator %in% c("CWM",
-                                  "Dry weight",
+                                  "Dry weight", 
                                   "Body size",
-                                  "Biomass",
+                                  "Biomass",   
                                   "Body mass",
-                                  "Log of biomass"),
+                                  "Log of biomass"), 
          
          Outcome_indicator != "CWM" | Trait_set == "Body size")
 
@@ -58,9 +58,34 @@ nrow(hyp2)
 #hyp2 rassemble 90 études comparatives et 14 sites, on peut faire une méta-analyse multi-niveaux
 
 #hyp 3 : agriculture organique et CWM
-hyp3 <- db %>%
+hyp3a <- db %>%
   filter(Intervention_R2 == "Organic agriculture",
-         
          Outcome_indicator == "CWM" & Trait_set == "Body size")
 
+length(unique(hyp3a$Article_ID))
+nrow(hyp3a)
+#hyp3a rassemble 16 études comparatives et 5 sites et papiers, on peut faire une méta-analyse multi-niveaux
 
+hyp3b <- db %>%
+  filter(Intervention_R2 == "Organic agriculture",
+         Outcome_indicator == "CWM" & Trait_set == "Diet")
+
+length(unique(hyp3b$Study_ID))
+nrow(hyp3b)
+#hyp3b rassemble 7 études comparatives et 3 sites, on peut faire une méta-analyse multi-niveaux
+
+hyp3c <- db %>%
+  filter(Intervention_R2 == "Organic agriculture",
+         Outcome_indicator == "CWM" & Trait_set == "Dispersal ability")
+
+length(unique(hyp3c$Study_ID))
+nrow(hyp3c)
+#hyp3c rassemble 13 études comparatives et 4 sites, on peut faire une méta-analyse multi-niveaux
+
+hyp3d <- db %>%
+  filter(Intervention_R2 == "Organic agriculture",
+         Outcome_indicator == "CWM" & Trait_set == "Hunting strategy")
+
+length(unique(hyp3d$Study_ID))
+nrow(hyp3d)
+#hyp3d rassemble 3 études comparatives et 2 sites, on peut faire une méta-analyse multi-niveaux
