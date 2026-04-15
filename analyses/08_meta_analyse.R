@@ -1,8 +1,10 @@
 #install.packages("metafor")
 library(metafor)
 
-
 dat <- read.csv("data/raw-data/quanti_data.csv", sep = ",", header = T)
+
+#Analyse 1 : effet de l'agriculture biologique sur le CWM de la faune du sol####
+#1.A : 
 
 data_MA <- dat %>%
   select(Article_ID, 
@@ -63,19 +65,14 @@ exp(res$b)
 forest(res)
 
 
-res_mod <- rma(
-  yi,
-  vi,
-  mods = ~ Article_ID,
-  Overall.score,
-  data = dat_es
-)
 
-rma(yi, vi,
-    random = ~ 1 | Article_ID,
-    mods = ~ vrai_modérateur)
 
-summary(res_mod)
+#rma(yi, vi,
+#    random = ~ 1 | Article_ID,
+#    mods = ~ Climate)
 
-funnel(res)
-regtest(res)
+#summary(res_mod)
+
+#funnel(res)
+#regtest(res)
+
