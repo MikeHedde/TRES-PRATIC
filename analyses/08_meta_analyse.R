@@ -61,7 +61,7 @@ dat <- select(
 data_ma_1A <- dat %>%
   filter(Intervention_R2 == "Organic agriculture",
          Trait_set == "Body size",
-         !Article_ID %in% c("s_77")) #test sans les articles qui vont dans l'autre sens
+         !Article_ID %in% c("s_77")) #on retire car comparateur différent
 
 #### calculate effect sizes
 dat_es <- escalc(
@@ -86,16 +86,16 @@ summary(res)
 exp(res$b)
 forest(res)
 
+#Ajout effets aléatoires et modérateurs
+rma(yi, vi,
+    random = ~ 1 | Study_ID,
+    mods = ~ Climate)
+
+summary(res_mod)
+
+
 funnel(res)
 regtest(res)
-
-
-#Ajout effets aléatoires et modérateurs
-#rma(yi, vi,
-#    random = ~ 1 | Article_ID,
-#    mods = ~ Climate)
-
-#summary(res_mod)
 
 
 
