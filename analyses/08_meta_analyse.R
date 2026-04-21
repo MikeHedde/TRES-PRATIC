@@ -6,7 +6,7 @@ library(metafor)
 library(tibble)
 #library(lattice)  
 #library(lme4)
-#library(ggplot2)
+library(ggplot2)
 #library(mgcv)
 #library(maptools)
 #library(sp)
@@ -44,6 +44,8 @@ dat <- select(
   Mod_time_period_of_sampling,
   Mod_crop_species,
   Mod_practice,
+  Earth_inversion,
+  Depth_between_int_and_comp,
   Overall.score,
   Mean_intervention,
   Type_variation_intervention,
@@ -87,33 +89,39 @@ exp(res$b)
 forest(res)
 
 #Ajout effets aléatoires et modérateurs
-rma(yi, vi,
-    random = ~ 1 | Study_ID,
-    mods = ~ Climate)
+model.RS.CTE <- rma.mv(yi, vi,
+                       mods=~Population_homogenized, 
+                       method="REML",
+                       random=~1 | Study_ID, 
+                       data=dat_es)
 
-summary(res_mod)
+#rma(yi, vi,
+#    random = ~ 1 | Study_ID,
+#    mods = ~ Population_homogenized)
+
+summary(model.RS.CTE)
 
 
+funnel(model.RS.CTE)
+#regtest(model.RS.CTE)
+forest(model.RS.CTE)
 funnel(res)
-regtest(res)
-
-
 
 
 #1.B : 
-data_ma_1B <- dat %>%
-  filter(Intervention_R2 == "Organic agriculture",
-         Trait_set == "Diet")
+#data_ma_1B <- dat %>%
+#  filter(Intervention_R2 == "Organic agriculture",
+#         Trait_set == "Diet")
 
 #1.C : 
-data_ma_1C <- dat %>%
-  filter(Intervention_R2 == "Organic agriculture",
-         Trait_set == "Dispersal ability")
+#data_ma_1C <- dat %>%
+#  filter(Intervention_R2 == "Organic agriculture",
+#         Trait_set == "Dispersal ability")
 
 #1.D : 
-data_ma_1D <- dat %>%
-  filter(Intervention_R2 == "Organic agriculture",
-         Trait_set == "Hunting strategy")
+#data_ma_1D <- dat %>%
+#  filter(Intervention_R2 == "Organic agriculture",
+#         Trait_set == "Hunting strategy")
 
 
 
@@ -123,17 +131,18 @@ data_ma_1D <- dat %>%
 #data base
 data_ma_2 <- dat %>%
   filter(Intervention_R2 == "Tillage management",
-         !Intervention_R3 %in% c("mulch sowing"))
+         !Intervention_R3 %in% c("Mulch sowing"),
+         Population_studied == "Earthworms")
 
 #### calculate effect sizes
 dat_es <- escalc(
   measure = "ROM",   # Ratio of Means (log response ratio)
-  m1i = Mean_intervention,
-  sd1i = sd_intervention,
-  n1i = N_intervention,
-  m2i = Mean_comparator,
-  sd2i = sd_comparator,
-  n2i = N_comparator,
+  m1i = Mean_comparator, #intervention et comparateur inversés
+  sd1i = sd_comparator,
+  n1i = N_comparator,
+  m2i = Mean_intervention,
+  sd2i = sd_intervention,
+  n2i = N_intervention,
   data = data_ma_2
 )
 
@@ -146,17 +155,36 @@ res <- rma(
 
 summary(res)
 exp(res$b)
-forest(res)
+forest(res,
+       slab = dat_es$Comparative_study_code)
 
 funnel(res)
 regtest(res)
 
 
 #Ajout effets aléatoires et modérateurs
-#rma(yi, vi,
-#    random = ~ 1 | Article_ID,
-#    mods = ~ Climate)
+model.complet <- rma.mv(yi, vi,
+                        #mods = ~ Earth_inversion,
+                        method = "REML",
+                        random = list(
+                          ~ 1 | Study_ID,
+                          ~ 1 | Depth_between_int_and_comp
+                        ),
+                        data = dat_es)
 
 #summary(res_mod)
+forest(model.complet,
+       slab = dat_es$Comparative_study_code)
 
 
+#ggplot(dat, aes(x = yi, y = study)) +
+#  geom_vline(xintercept = 0, linetype = "dashed") +
+#  geom_errorbarh(aes(xmin = ci.lb, xmax = ci.ub), height = 0) +
+#  geom_point() +
+#  facet_grid(population_homogenized ~ ., scales = "free_y", space = "free_y") +
+#  labs(x = "Effect size", y = NULL) +
+#  theme_bw() +
+#  theme(
+#    strip.text.y = element_text(angle = 0, face = "bold"),
+#    panel.spacing = unit(0.8, "lines")
+ # )
