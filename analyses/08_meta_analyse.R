@@ -1,5 +1,8 @@
 #install.packages("metafor")
 
+install.packages("remotes")
+remotes::install_github("daniel1noble/orchaRd")
+
 ###libraries
 library(dplyr)
 library(metafor)
@@ -123,8 +126,15 @@ funnel(res)
 #  filter(Intervention_R2 == "Organic agriculture",
 #         Trait_set == "Hunting strategy")
 
-
-
+#on met tout ensemble et on sépare dans le orchard
+p <- orchaRd::orchard_plot(
+  res_2,
+  group = Trait_set,
+  xlab = "Log response ratio",
+  transfm = "none",
+  twig.size = 0.5,
+  trunk.size = 1
+)
 
 
 ###Analyse 2 : effet du labour sur la biomasse des vers de terre################
@@ -135,7 +145,7 @@ data_ma_2 <- dat %>%
          Population_studied == "Earthworms")
 
 #### calculate effect sizes
-dat_es <- escalc(
+dat_es_2 <- escalc(
   measure = "ROM",   # Ratio of Means (log response ratio)
   m1i = Mean_comparator, #intervention et comparateur inversés
   sd1i = sd_comparator,
@@ -144,38 +154,49 @@ dat_es <- escalc(
   sd2i = sd_intervention,
   n2i = N_intervention,
   data = data_ma_2
-)
+  )
 
-res <- rma(
+res_2 <- rma(
   yi,
   vi,
-  data = dat_es,
+  data = dat_es_2,
   method = "REML"
-)
+  )
 
-summary(res)
-exp(res$b)
-forest(res,
-       slab = dat_es$Comparative_study_code)
+summary(res_2)
+exp(res_2$b)
+forest(res_2,
+       slab = dat_es_2$Comparative_study_code)
 
-funnel(res)
-regtest(res)
+funnel(res_2)
+regtest(res_2)
+
 
 
 #Ajout effets aléatoires et modérateurs
-model.complet <- rma.mv(yi, vi,
-                        #mods = ~ Earth_inversion,
+res_complet_2 <- rma.mv(yi, vi,
+                        #mods = ~ Earth_inversion, #pour une publi on ne sait pas donc on ne peut pas l'inclure
                         method = "REML",
                         random = list(
                           ~ 1 | Study_ID,
                           ~ 1 | Depth_between_int_and_comp
                         ),
-                        data = dat_es)
+                        data = dat_es_2)
 
 #summary(res_mod)
-forest(model.complet,
-       slab = dat_es$Comparative_study_code)
+forest(res_complet_2,
+       slab = dat_es_2$Comparative_study_code)
 
+#modèle de méta-regression : avec modérateur
+res_complet_2_bis <- rma.mv(yi, vi,
+                        mods = ~ Depth_between_int_and_comp,
+                        method = "REML",
+                        random = ~ 1 | Study_ID,
+                        data = dat_es_2)
+
+#summary(res_mod)
+forest(res_complet_2_bis,
+       slab = dat_es_2$Comparative_study_code)
 
 #ggplot(dat, aes(x = yi, y = study)) +
 #  geom_vline(xintercept = 0, linetype = "dashed") +
@@ -188,3 +209,24 @@ forest(model.complet,
 #    strip.text.y = element_text(angle = 0, face = "bold"),
 #    panel.spacing = unit(0.8, "lines")
  # )
+
+
+#Visualisation des figures
+
+p <- orchaRd::orchard_plot(
+  
+  model.2.mod.log,
+  
+  mod = "population_homogenized",
+  
+  group = "article_id",
+  
+  xlab = "Log response ratio",
+  
+  transfm = "none",
+  
+  twig.size = 0.5,
+  
+  trunk.size = 1)
+
+p
