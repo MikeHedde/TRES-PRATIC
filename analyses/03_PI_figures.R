@@ -138,7 +138,7 @@ theme_pub <- theme_minimal(base_size = 12) +
     panel.grid = element_blank(),
     axis.title = element_text(face = "bold", color = "black"),
     axis.text = element_text(color = "black"),
-    plot.margin = margin(0, 0, 0, 0)
+    plot.margin = margin(10, 15, 10, 15)
   )
 
 #############################################################
@@ -185,7 +185,14 @@ p_top <- ggplot(
     color = "black",
     linewidth = 0.25
   ) +
-  scale_y_continuous(expand = expansion(mult = c(0, 0))) +
+  
+  geom_text(
+    aes(label = n),
+    vjust = -0.3,
+    size = 4
+  )+
+  
+  scale_y_continuous(expand = expansion(mult = c(0, 0.35))) +
   theme_pub +
   theme(
     axis.text.x = element_blank(),
@@ -211,8 +218,15 @@ p_right <- ggplot(
     color = "black",
     linewidth = 0.25
   ) +
+  
+  geom_text(
+    aes(label = n),
+    hjust = -0.2,
+    size = 4
+  ) +
+  
   theme_pub +
-  scale_x_continuous(expand = expansion(mult = c(0, 0)))+
+  scale_x_continuous(expand = expansion(mult = c(0, 0.25)))+
   theme(
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank(),
@@ -270,6 +284,7 @@ final_plot <- cowplot::plot_grid(
   axis = "tb"
 )
 
+
 final_plot
 
 #Pour exporter :
@@ -283,7 +298,6 @@ final_plot
     dpi = 450,
     bg = "white"
   )
-  
   
 #############################################################
 # Figure A. Distribution of interventions
