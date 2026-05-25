@@ -6,6 +6,8 @@
 librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, 
                  treemapify, cowplot, patchwork, scatterpie, tidyr)
 
+
+
 # Run all scripts
 # Order matters !
 source(file.path("analyses/01_data_handling.R"))

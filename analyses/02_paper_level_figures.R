@@ -1,21 +1,22 @@
 # Dataset
-paper_level_db <- read.csv("data/derived-data/paper_level_db.csv") 
+paper_db <- read.csv("data/derived-data/paper_db.csv") 
+exp_db <- read.csv("data/derived-data/exp_db.csv") 
 
 
 #############################################################
-# Figure showing the number of studies published per country
+# Figure showing the number of experimentations per country
 #############################################################
-articles_per_country <- paper_level_db %>%
+exp_per_country <- exp_db %>%
   count(Study_country) %>%
   rename(Country = Study_country)
   
 world <- ne_countries(scale = "medium", returnclass = "sf")
 map_data <- world %>%
-  left_join(articles_per_country, by = c("name" = "Country"))
+  left_join(exp_per_country, by = c("name" = "Country"))
 
 # manque-t-il des pays dans le df joint?
 missing_countries <- setdiff(
-  articles_per_country$Country,
+  exp_per_country$Country,
   world$name
 )
 
@@ -27,18 +28,18 @@ fig_chloropeth <- ggplot(map_data) +
   scale_fill_gradient(
     low = "lightblue",
     high = "darkblue",
-    name = "Nombre\nde sites\nd'étude") +
+    name = "Nombre d'expérimentations\nindépendantes") +
   theme_minimal() +
 
 geom_point(
-  data = paper_level_db,
+  data = exp_db,
   aes(x = Longitude, y = Latitude),
   color = "red",
   size = 1.5,
   alpha = 0.7
 )
 
-ggsave("Figures/01_paper_level/map_articles_country.png", 
+ggsave("Figures/01_paper_level/map_exp_country.png", 
        plot = fig_chloropeth,
        width = 20, height = 8, dpi = 300)
 
@@ -48,7 +49,7 @@ ggsave("Figures/01_paper_level/map_articles_country.png",
 pub_year <- data.frame(
   Publication_Year = seq(1995, 2022)) 
 
-year_counts <- paper_db %>%  #nrow = 40 : 41 articles moins le 127 pas encore traité exclu script 01
+year_counts <- paper_db %>%  
   count(Publication_Year) 
 
 year_counts <- pub_year %>%

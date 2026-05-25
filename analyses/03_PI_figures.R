@@ -25,15 +25,15 @@ order_taxa <- c(
   "Beetles",
   "Spiders",
   "Macroinvertebrates",
-  "Collembola",
-  "Other insects",
   "Microinvertebrates",
+  "Collembola",
+  "Termites",
+  "Other insects",
+  "Invertebrates",
   "Millipedes",
   "Acari",
-  "Termites",
   "Ants",
   "Woodlice",
-  "Invertebrates",
   "Other arachnids",
   "Mollusks",
   "Tardigrada"
@@ -93,8 +93,7 @@ PI_db <- PI_db %>%
 #############################################################
 # 2. Agrégation
 #############################################################
-heatmap_data <- PI_db %>% #Tableau avec une colonne pour le nombre d'occurrences de chaque couple intervention/population
-  distinct(Study_ID, Intervention_R2, Population_homogenized) %>%
+heatmap_data <- PI_db %>% #Tableau avec une colonne pour le nombre d'occurrences de chaque couple intervention/population/expérimentation
   count(Intervention_R2, Population_homogenized, name = "n")
 
 heatmap_data <- heatmap_data %>%
@@ -113,22 +112,22 @@ pop_counts <- PI_db %>% #Tableau avec le nombre d'occurrences de chaque populati
 #############################################################
 
 # Comptage du nombre d'études par intervention
-intervention_counts <- PI_db %>%
-  distinct(Study_ID, Intervention_R2) %>%
-  count(Intervention_R2, name = "n") %>%
-  arrange(n)
+#intervention_counts <- PI_db %>%
+#  distinct(Study_ID, Intervention_R2) %>%
+#  count(Intervention_R2, name = "n") %>%
+#  arrange(n)
 
-intervention_counts <- intervention_counts %>%
-  na.omit()
+#intervention_counts <- intervention_counts %>%
+#  na.omit()
 
 # Comptage du nombre d'études par groupe de faune
-pop_counts <- PI_db %>%
-  distinct(Study_ID, Population_homogenized) %>%
-  count(Population_homogenized, name = "n") %>%
-  arrange(n)
+#pop_counts <- PI_db %>%
+#  distinct(Study_ID, Population_homogenized) %>%
+#  count(Population_homogenized, name = "n") %>%
+#  arrange(n)
 
-pop_counts <- pop_counts %>%
-  na.omit()
+#pop_counts <- pop_counts %>%
+#  na.omit()
 
 #############################################################
 # 3. Thème commun

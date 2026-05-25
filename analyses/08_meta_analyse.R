@@ -1,53 +1,27 @@
-#install.packages("metafor")
+###Analyse 2 : effet du labour sur la biomasse des vers de terre################
 
-install.packages("remotes")
-remotes::install_github("daniel1noble/orchaRd")
-
-###libraries
-library(dplyr)
+###Libraries
 library(metafor)
-library(tibble)
-#library(lattice)  
-#library(lme4)
-library(ggplot2)
-#library(mgcv)
-#library(maptools)
-#library(sp)
-#library(ggmap)
-#library(rgdal)
-#library(doBy)
-#library(raster)
-#library(ClimClass)
-#library(gdata)
-
+library(orchaRd)
 
 ###Import data
-dat <- read.csv("data/raw-data/quanti_data.csv", 
+data_labour <- read.csv("data/raw-data/quanti_data.csv", 
                 sep = ",", 
                 header = T)
-  
-dat <- select(
-  dat,
+
+###Create data base
+data_labour <- select(
+  data_labour,
   Article_ID, 
   Study_ID,
   Comparative_study_code,
   Population_studied,
-  Population_homogenized,
   Intervention_R2,
   Intervention_R3,
-  Intervention_copy_paste,
   Comparator,
   Outcome_indicator,
   Outcome_metric,
   Trait_set,
-  Mod_country,
-  Latitude,
-  Longitude,
-  Mod_soil_type,
-  Mod_time_period_of_sampling,
-  Mod_crop_species,
-  Mod_practice,
-  Earth_inversion,
   Depth_between_int_and_comp,
   Overall.score,
   Mean_intervention,
@@ -58,94 +32,13 @@ dat <- select(
   Type_variation_comparator,
   sd_comparator,
   N_comparator
-  ) 
-
-###Analyse 1 : effet de l'agriculture biologique sur le CWM de la faune du sol####
-###1.A 
-#data base
-data_ma_1A <- dat %>%
-  filter(Intervention_R2 == "Organic agriculture",
-         Trait_set == "Body size",
-         !Article_ID %in% c("s_77")) #on retire car comparateur différent
-
-#### calculate effect sizes
-dat_es <- escalc(
-  measure = "ROM",   # Ratio of Means (log response ratio)
-  m1i = Mean_intervention,
-  sd1i = sd_intervention,
-  n1i = N_intervention,
-  m2i = Mean_comparator,
-  sd2i = sd_comparator,
-  n2i = N_comparator,
-  data = data_ma_1A
-)
-
-res <- rma(
-  yi,
-  vi,
-  data = dat_es,
-  method = "REML"
-)
-
-summary(res)
-exp(res$b)
-forest(res)
-
-#Ajout effets aléatoires et modérateurs
-model.RS.CTE <- rma.mv(yi, vi,
-                       mods=~Population_homogenized, 
-                       method="REML",
-                       random=~1 | Study_ID, 
-                       data=dat_es)
-
-#rma(yi, vi,
-#    random = ~ 1 | Study_ID,
-#    mods = ~ Population_homogenized)
-
-summary(model.RS.CTE)
-
-
-funnel(model.RS.CTE)
-#regtest(model.RS.CTE)
-forest(model.RS.CTE)
-funnel(res)
-
-
-#1.B : 
-#data_ma_1B <- dat %>%
-#  filter(Intervention_R2 == "Organic agriculture",
-#         Trait_set == "Diet")
-
-#1.C : 
-#data_ma_1C <- dat %>%
-#  filter(Intervention_R2 == "Organic agriculture",
-#         Trait_set == "Dispersal ability")
-
-#1.D : 
-#data_ma_1D <- dat %>%
-#  filter(Intervention_R2 == "Organic agriculture",
-#         Trait_set == "Hunting strategy")
-
-#on met tout ensemble et on sépare dans le orchard
-p <- orchaRd::orchard_plot(
-  res_2,
-  group = Trait_set,
-  xlab = "Log response ratio",
-  transfm = "none",
-  twig.size = 0.5,
-  trunk.size = 1
-)
-
-
-###Analyse 2 : effet du labour sur la biomasse des vers de terre################
-#data base
-data_ma_2 <- dat %>%
+) %>%
   filter(Intervention_R2 == "Tillage management",
          !Intervention_R3 %in% c("Mulch sowing"),
          Population_studied == "Earthworms")
 
-#### calculate effect sizes
-dat_es_2 <- escalc(
+####Calculate effect sizes
+lnRR_labour <- escalc(
   measure = "ROM",   # Ratio of Means (log response ratio)
   m1i = Mean_comparator, #intervention et comparateur inversés
   sd1i = sd_comparator,
@@ -153,50 +46,62 @@ dat_es_2 <- escalc(
   m2i = Mean_intervention,
   sd2i = sd_intervention,
   n2i = N_intervention,
-  data = data_ma_2
+  data = data_labour
   )
 
-res_2 <- rma(
+###Fixed effects model (ne prend pas en compte l'hétérogénéité due aux différents niveaux)
+mod_FE_lnRR_labour <- rma(
   yi,
   vi,
-  data = dat_es_2,
-  method = "REML"
+  method = "EE",
+  data = lnRR_labour
   )
 
-summary(res_2)
-exp(res_2$b)
-forest(res_2,
-       slab = dat_es_2$Comparative_study_code)
+forest(mod_FE_lnRR_labour,
+       slab = lnRR_labour$Comparative_study_code)
 
-funnel(res_2)
-regtest(res_2)
+#funnel(res_2)
+#regtest(res_2)
 
 
+###Multi level meta analytic model
+mod_ML_lnRR_labour <- rma.mv(yi, 
+                             vi,
+                             random = list(
+                               ~ 1 | Article_ID,
+                               ~ 1 | Study_ID,
+                               ~ 1 | Comparative_study_code
+                             ),
+                             method = "REML",
+                             data = lnRR_labour
+                             )
 
-#Ajout effets aléatoires et modérateurs
-res_complet_2 <- rma.mv(yi, vi,
-                        #mods = ~ Earth_inversion, #pour une publi on ne sait pas donc on ne peut pas l'inclure
-                        method = "REML",
-                        random = list(
-                          ~ 1 | Study_ID,
-                          ~ 1 | Depth_between_int_and_comp
-                        ),
-                        data = dat_es_2)
+mod_ML_lnRR_labour_bis <- rma.mv(yi, 
+                             vi,
+                             random = ~ 1 | Article_ID/Study_ID/Comparative_study_code,
+                             method = "REML",
+                             data = lnRR_labour
+                             )
 
-#summary(res_mod)
-forest(res_complet_2,
-       slab = dat_es_2$Comparative_study_code)
+forest(mod_ML_lnRR_labour_bis,
+      slab = lnRR_labour$Comparative_study_code)
 
-#modèle de méta-regression : avec modérateur
-res_complet_2_bis <- rma.mv(yi, vi,
-                        mods = ~ Depth_between_int_and_comp,
-                        method = "REML",
-                        random = ~ 1 | Study_ID,
-                        data = dat_es_2)
+###Explaining variance with meta-regression
+mod_MLMR_lnRR_depth <- rma.mv(yi, 
+                              vi,
+                              mods = ~ Depth_between_int_and_comp,
+                              random = ~ 1 | Article_ID/Study_ID/Comparative_study_code,
+                              method = "REML",
+                              test = "t",
+                              data = lnRR_labour,
+                              sparse = TRUE
+                              )
+                                 
+forest(mod_MLMR_lnRR_depth,
+       slab = lnRR_labour$Comparative_study_code)
 
-#summary(res_mod)
-forest(res_complet_2_bis,
-       slab = dat_es_2$Comparative_study_code)
+regplot(mod_MLMR_lnRR_depth) #affiche la droite de régression
+
 
 #ggplot(dat, aes(x = yi, y = study)) +
 #  geom_vline(xintercept = 0, linetype = "dashed") +
