@@ -23,6 +23,10 @@ ggplot(pie_data, aes(x = "", y = n, fill = Outcome_type_R2)) +
     position = position_stack(vjust = 0.5),
     size = 4
   ) +
+  scale_fill_manual(
+    values = c(
+      "#9ECAE1",
+      "#4292C6")) +
   labs(fill = "Type d'indicateur") +
   theme_void()
 
