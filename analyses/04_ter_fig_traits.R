@@ -21,14 +21,18 @@ ggplot(pie_data, aes(x = "", y = n, fill = Outcome_type_R2)) +
   geom_text(
     aes(label = label),
     position = position_stack(vjust = 0.5),
-    size = 4
+    size = 8
   ) +
   scale_fill_manual(
     values = c(
       "#9ECAE1",
       "#4292C6")) +
   labs(fill = "Type d'indicateur") +
-  theme_void()
+  theme_void() +
+  theme(
+    legend.title = element_text(size = 18),
+    legend.text = element_text(size = 16)
+  )
 
 
 #histogramme groupes de traits
@@ -43,7 +47,7 @@ trait_counts <- trait_grp_db %>%
       Trait_group,
       "Morphological" = "Morphologique",
       "Physiological" = "Physiologique",
-      "Ecological preference" = "Préférence écologique",
+      "Ecological preference" = "Préférence\nécologique",
       "Behavioral" = "Comportemental",
       "Phenological" = "Phénologique"
     )
@@ -53,14 +57,19 @@ ggplot(trait_counts, aes(x = reorder(Trait_group, -n), y = n)) +
   geom_col(fill = "blue", width = 0.3) +
   geom_text(aes(label = label),
             vjust = -0.3,
-            size = 4) +
+            size = 7) +
   labs(
     x = "Groupe de traits",
     y = "Nombre d’occurrences"
   ) +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(size = 12),
-    axis.text.y = element_text(size = 12),
-    axis.title.x = element_text(size = 14),
-    axis.title.y = element_text(size = 14))
+    axis.text.x = element_text(size = 16),
+    axis.text.y = element_text(size = 16),
+    axis.title.x = element_text(size = 18),
+    axis.title.y = element_text(size = 18))
+
+comptes <- db %>%
+  filter(Outcome_type_R2 == "MultiTrait value") %>%
+  select(Study_ID, Outcome_indicator) %>%
+  distinct() 
