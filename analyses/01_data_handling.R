@@ -10,6 +10,8 @@ db <- db %>%
          Outcome_type_R3 == "Univariate"
          )
 
+write.csv(x = db, file = "data/derived-data/db.csv")
+
 #Sous jeu de données synthétique au niveau des articles, 37 lignes
 paper_db <- db %>%
   select(Article_ID, Publication_Year, Newspaper) %>%

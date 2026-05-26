@@ -3,8 +3,9 @@
 # ============================================================
 
 # Libraries
-librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, 
-                 treemapify, cowplot, patchwork, scatterpie, tidyr)
+librarian::shelf(tidyverse, ggplot2, sf, rnaturalearth, #dplyr incluse dans tidyverse
+                 treemapify, cowplot, patchwork, scatterpie, tidyr,
+                 metafor, tibble)  #tibble permte d'avoir view
 
 
 
