@@ -1,6 +1,6 @@
 library(scales)
 
-#camembert trait value vs multitrait value
+#camembert trait value vs multitrait value en nombre d'occurences
 div_db <- read.csv("data/derived-data/div_db.csv") 
 
 pie_data <- div_db %>%
@@ -34,6 +34,52 @@ ggplot(pie_data, aes(x = "", y = n, fill = Outcome_type_R2)) +
     legend.text = element_text(size = 16)
   )
 
+# camembert trait value vs multitrait value par expérimentation
+div_db <- read.csv("data/derived-data/div_db.csv") 
+
+categories <- div_db %>%
+  group_by(Study_ID) %>%
+  summarise(
+    has_single = any(Outcome_type_R2 == "Trait value"),
+    has_multiple = any(Outcome_type_R2 == "MultiTrait value"),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    categorie_exclusive = case_when(
+      has_single & has_multiple ~ "Both",
+      has_single ~ "Single trait only",
+      has_multiple ~ "Multiple traits only"
+    )
+  )
+
+counts_pie <- categories %>%
+  count(categorie_exclusive) %>%
+  mutate(
+    percentage = n / sum(n) * 100,
+    label = paste0(round(percentage, 1), "%")
+  )
+
+ggplot(counts_pie, aes(x = "", y = n, fill = categorie_exclusive)) +
+  geom_col(width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = label),
+    position = position_stack(vjust = 0.5),
+    size = 8
+  ) +
+  scale_fill_manual(
+    values = c(
+      "#4292C6",
+      "#C6DBEF",
+      "#9ECAE1"
+    )
+  ) +
+  labs(fill = "Type of indicator") +
+  theme_void() +
+  theme(
+    legend.title = element_text(size = 18),
+    legend.text = element_text(size = 16)
+  )
 
 #histogramme groupes de traits
 trait_grp_db <- read.csv("data/derived-data/trait_grp_db.csv") 

@@ -28,7 +28,7 @@ fig_chloropeth <- ggplot(map_data) +
   scale_fill_gradient(
     low = "lightblue",
     high = "darkblue",
-    name = "Nombre d'expérimentations\nindépendantes") +
+    name = "Number of independent\nexperiments") +
   theme_minimal() +
 
 geom_point(
