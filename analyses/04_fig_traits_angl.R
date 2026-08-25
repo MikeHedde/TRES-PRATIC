@@ -81,6 +81,34 @@ ggplot(counts_pie, aes(x = "", y = n, fill = categorie_exclusive)) +
     legend.text = element_text(size = 16)
   )
 
+#pourcentage d'experimentations utilisant le CWM
+(sum(div_db$Outcome_indicator == "CWM"))/(n_distinct(div_db$Study_ID))*100
+
+a <- div_db %>%
+  filter(Outcome_type_R2=="Trait value")%>%
+  distinct(Study_ID, Outcome_type_R2)
+nrow(a) #40 expérimentations ont au moins une mesure de trait (basée sur un seul trait)
+
+b=sum(div_db$Outcome_indicator == "CWM") #11 expérimentations présentent un CWM
+
+b/nrow(a)*100 # 27,5% des expérimentations présentant au moins une mesure de trait utilisent un CWM
+
+c<-div_db%>%
+  filter(Outcome_type_R2=="Trait value")
+
+d<-div_db%>%
+  filter(Outcome_type_R2=="MultiTrait value")
+
+
+percents <- db %>%
+  select(Study_ID, Outcome_indicator, Trait_set) %>%
+  filter(Outcome_indicator == "CWM") %>%
+  distinct()
+
+(sum(percents$Trait_set == "Body size"))/(nrow(percents))*100
+(sum(percents$Trait_set == "Body size"))/(nrow(percents))*100
+
+
 #histogramme groupes de traits
 trait_grp_db <- read.csv("data/derived-data/trait_grp_db.csv") 
 
