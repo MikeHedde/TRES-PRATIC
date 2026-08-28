@@ -290,7 +290,8 @@ final_plot
 #Pour exporter :
   
   ggsave(
-    "Figures/02_PI/heatmap_marginals_final.png",
+    "Figures/02_PI/heatmap_marginals_fr
+    .png",
     plot = final_plot,
     width = 9.2,
     height = 6.6,

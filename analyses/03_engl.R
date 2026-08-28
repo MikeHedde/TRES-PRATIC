@@ -64,33 +64,12 @@ pop_counts <- PI_db %>% #Tableau avec le nombre d'occurrences de chaque populati
   distinct(Study_ID, Population_homogenized) %>%
   count(Population_homogenized, name = "n")
 
-#############################################################
-# 2bis. Préparation pour figures complémentaires
-#############################################################
-
-# Comptage du nombre d'études par intervention
-#intervention_counts <- PI_db %>%
-#  distinct(Study_ID, Intervention_R2) %>%
-#  count(Intervention_R2, name = "n") %>%
-#  arrange(n)
-
-#intervention_counts <- intervention_counts %>%
-#  na.omit()
-
-# Comptage du nombre d'études par groupe de faune
-#pop_counts <- PI_db %>%
-#  distinct(Study_ID, Population_homogenized) %>%
-#  count(Population_homogenized, name = "n") %>%
-#  arrange(n)
-
-#pop_counts <- pop_counts %>%
-#  na.omit()
 
 #############################################################
 # 3. Thème commun
 #############################################################
 
-theme_pub <- theme_minimal(base_size = 12) +
+theme_pub <- theme_minimal(base_size = 14) +
   theme(
     panel.grid = element_blank(),
     axis.title = element_text(face = "bold", color = "black"),
@@ -199,15 +178,38 @@ p_right <- ggplot(
 # 7. Assemblage final
 #############################################################
 # 1. Heatmap avec légende
+# Graduations entières pour la légende
+legend_breaks <- unique(round(pretty(
+  range(heatmap_data$n, na.rm = TRUE),
+  n = 5
+)))
+
 p_heat_leg <- p_heat +
   theme(
     legend.position = "right",
+    
+    legend.title = element_text(
+      size = 14,
+      face = "bold"
+    ),
+    
+    legend.text = element_text(
+      size = 12
+    ),
+    
+    # Réduit les marges autour de la légende
     legend.margin = margin(0, 0, 0, 0),
     legend.box.margin = margin(0, 0, 0, 0)
   ) +
+  
   scale_fill_viridis_c(
-    name = "Number\nof studies",
+    name = "Number of\nindependent\nexperiments",
     option = "D",
+    
+    #que des entiers
+    breaks = legend_breaks,
+    labels = legend_breaks,
+    
     guide = guide_colorbar(
       barheight = unit(28, "mm"),
       barwidth  = unit(3, "mm"),
@@ -236,7 +238,7 @@ final_plot <- cowplot::plot_grid(
   main_panel,
   leg,
   nrow = 1,
-  rel_widths = c(1, 0.09),
+  rel_widths = c(1, 0.15),
   align = "h",
   axis = "tb"
 )
@@ -247,7 +249,7 @@ final_plot
 #Pour exporter :
 
 ggsave(
-  "Figures/02_PI/heatmap_marginals_final_fr.png",
+  "Figures/02_PI/heatmap_marginals_final_plus_size.png",
   plot = final_plot,
   width = 9.2,
   height = 6.6,
